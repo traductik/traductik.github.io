@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Traductik va droit au but"
+title: "Droit au but"
 date: 2017-11-08
 ---
 
