@@ -1,0 +1,14 @@
+.navbar .nav > li > a.brand-image {
+      padding: 4px 0px 0px 0px;
+}
+.navbar .nav > li > a > img.brand-image {
+    -webkit-border-radius: 0px;
+       -moz-border-radius: 0px;
+            border-radius: 0px;
+
+}
+.site-title {
+font-style: italic;
+font-variant: small-caps;
+
+}
