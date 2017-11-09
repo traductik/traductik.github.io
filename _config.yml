@@ -22,8 +22,8 @@ index:
 feed:
   en: /feed.xml
   fr: /flux.xml
-baseurl: "https://traductik.github.io/traductik" # the subpath of your site, e.g. /blog
-url: "https://traductik.github.io/traductik" # the base hostname & protocol for your site
+baseurl: "/traductik" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
 twitter_username: traductik
 github_username:  traductik
 
