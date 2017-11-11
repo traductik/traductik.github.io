@@ -5,14 +5,23 @@
 	
 	<style media="screen" type="text/css">
 
-.en:lang(en), .fr:lang(fr) {
+	.en:lang(en), .fr:lang(fr) {
     font-size: 1.25em;
-}
+	}
+	.flag-icon {
+	z-index:-1;
+	}
+	.language-selector   {
+	text-align: right;
+	line-height: 1em;
+	margin-top:0.5em;
+	}
+
 </style>
 	
 	
 	</head>
-<div class="wrapper" style="text-align: right; line-height: 2em"> <!---- Language selector ------->
+<div class="wrapper language-selector"> <!---- Language selector ------->
 	
   {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
   {% for post in posts %} <a href="{{ post.url | prepend: site.baseurl }}" class="{{ post.lang }}"><span class="flag-icon flag-icon-{{ post.lang }}"></span></a>{% endfor %}

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Devis
+title: Devis express
 permalink: /devis_fr/
 ref: devis
 lang: fr
