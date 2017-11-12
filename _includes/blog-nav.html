@@ -6,11 +6,11 @@
 <body>
 
 
-
+ <!----------------- Zone d'affichage latérale ------------------->
 <div class="w3-sidebar w3-bar-block w3-card w3-animate-right" style="display:none;right:0;" id="rightMenu">
   <button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large">Close &times;</button>
  
- <!----------------- Liste des articles ------------------->
+ <!----------------- Liste des articles de blog ------------------->
  <ul class="post-list">
     {% assign posts=site.posts | where:"lang", page.lang %}
     {% for post in posts %}
@@ -18,19 +18,22 @@
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
         <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <a class="post-link" style="font-size:60%" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
       </li>
     {% endfor %}
   </ul>
-  <!----------------- Fin de la liste des articles ------------------->
+  <!----------------- Fin de la liste des articles de blog ------------------->
   
-</div>
+</div> <!----------------- Fin de la zone d'affichage latérale ------------------->
 
-<div class="w3-light-grey" style="margin-top:0em">
-  <button class="w3-button w3-light-grey w3-large w3-right" onclick="openRightMenu()">Actualités &#9998;</button>
+
+<!----------------- Bouton d'affichage ------------------->
+
+
+  <button class="w3-button w3-light-grey w3-medium w3-right" onclick="openRightMenu()">Actualités <span style="font-size:200%">&#9998;</span></button>
   
-</div>
+<!----------------- Fin du bouton d'affichage ------------------->
 
 
      

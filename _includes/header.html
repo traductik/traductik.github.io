@@ -1,4 +1,8 @@
 <head>
+	
+<link rel="stylesheet" href="{{ site.baseurl }}/css/header.scss">
+	
+
 
 </head>
 
@@ -6,14 +10,13 @@
 
   <div class="wrapper"><!----------------- Wrapper dans header ------------------->
 
-     <a href="{{ site.baseurl }}/{{ site.index[page.lang] }}"><img style ="width:40%;margin-top:0.5em;margin-bottom:0.25em" src="{{ site.baseurl }}/{{ site.logo[page.lang] }}"/></a>
+     <a href="{{ site.baseurl }}/{{ site.index[page.lang] }}"><img class="logo-header" src="{{ site.baseurl }}/{{ site.logo[page.lang] }}"/></a>
 
   {% include site-nav.html %}
 
-{% include blog-nav.html %}
+
   </div><!----------------- Fin de wrapper dans header ------------------->
 
 </header><!----------------- Fin de header ------------------->
-
 
  {% include language-selector.html %}
