@@ -27,6 +27,16 @@ url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: traductik
 github_username:  traductik
 
+
+
+#Collections
+collections:
+  services:
+    output: true
+    permalink: /services/:path/
+
+
+
 # Build settings
 markdown: kramdown
 
