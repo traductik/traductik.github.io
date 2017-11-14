@@ -11,15 +11,15 @@ lang: fr
 
 
 <ul>
-    {% assign posts=site.services | where:"lang", page.lang %}
-    {% for post in posts %}
+    {% assign pages=site.services | where:"lang", page.lang %}
+    {% for page in pages %}
       <li>
         
         <h3 >
-			<a  href="{{ post.url | prepend: site.baseurl }}"><img src="{{ post.teaser-img | prepend: site.baseurl }}" alt="{{ post.title }}" title="{{ post.title }}"></a> <br>
+			<a  href="{{ page.url | prepend: site.baseurl }}"><img src="{{ page.teaser-img | prepend: site.baseurl }}" alt="{{ page.title }}" title="{{ page.title }}"></a> <br>
           
         </h3>
-        <p >{{ post.subtitle }}</p>
+        <p >{{ page.subtitle }}</p>
       </li>
     {% endfor %}
   </ul>
