@@ -60,7 +60,11 @@ li.dropdown {
           {% if my_page.title %}
          <li class="dropdown">
 	  <a href="javascript:void(0)" class="dropbtn">
-			 <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+			 <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}
+			 
+			{% if site.[my_page.ref] %}
+  &nbsp;&#9661;
+{% endif %}</a>
        </a> 
         
           <div class="dropdown-content">
