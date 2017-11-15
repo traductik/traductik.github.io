@@ -1,5 +1,4 @@
-<html>
-<head>
+
 <style>
 body {
   margin: 0;
@@ -30,11 +29,9 @@ body {
   color: black;
 }
 
-
 </style>
-</head>
-<body>
 
+ 
 <div id="sticky-navbar">
 	     
   {% assign pages=site.pages | where:"lang", page.lang %}
@@ -43,14 +40,25 @@ body {
           <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
           {% endif %}
         {% endfor %}
-    <aside>{% include language-selector.html %}</aside>
+    <span>{% include language-selector.html %}
+   <style> 
+	.flag-icon-{{ page.lang }} {
+	 font-size: 1.75em;
+	 line-height: 0.75em;
+	}
+	
+	.flag-icon {
+	z-index:10;
+	}
+</style></span>
+
     
 </div>
 
 
 
 <script>
-// When the user scrolls down 20px from the top of the document, slide down the sticky-navbar
+// When the user scrolls down 120px from the top of the document, slide down the sticky-navbar
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -62,5 +70,3 @@ function scrollFunction() {
 }
 </script>
 
-</body>
-</html>
