@@ -1,35 +1,17 @@
-<!DOCTYPE html>
-<html >
-	
-	<head>
-	
-	<style>
 
-	.flag-icon-{{ page.lang }} {
-	 font-size: 1.75em;
-	 line-height: 0.75em;
-	}
-	.flag-icon {
-	z-index:-1;
-	}
-	.language-selector   {
-	text-align: right;
-	line-height: 1em;
-	margin-top:0.5em;
-	}
 
-</style>
-	
-	
-	</head>
+
 <div class="wrapper language-selector"> <!---- Language selector ------->
 	
   {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
-  {% for post in posts %} <a href="{{ post.url | prepend: site.baseurl }}" class="{{ post.lang }}"><span class="flag-icon flag-icon-{{ post.lang }}"></span></a>{% endfor %}
+  {% for post in posts %} <a href="{{ post.url | prepend: site.baseurl }}" class="{{ post.lang }}"><span style="z-index:-1;" class="flag-icon flag-icon-{{ post.lang }}"></span></a>{% endfor %}
 
   {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
-  {% for page in pages %} <a href="{{ page.url | prepend: site.baseurl }}" class="{{ page.lang }}"><span class="flag-icon flag-icon-{{ page.lang }}"></span></a>{% endfor %}
+  {% for page in pages %} <a href="{{ page.url | prepend: site.baseurl }}" class="{{ page.lang }}"><span style="z-index:-1;" class="flag-icon flag-icon-{{ page.lang }}"></span></a>{% endfor %}
   
+   {% assign pages=site.services | where:"ref", page.ref | sort: 'lang' %}
+  {% for page in pages %} <a href="{{ page.url | prepend: site.baseurl }}" class="{{ page.lang }}"><span style="z-index:-1;" class="flag-icon flag-icon-{{ page.lang }}"></span></a>{% endfor %}
+  
+
   
 </div><!---- End of language selector ------->
-</html>

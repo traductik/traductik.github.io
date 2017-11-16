@@ -1,13 +1,14 @@
 ---
-layout: post
+layout: page
 title:  "Traduction"
-subtitle: Mots justes, phrases pertinentes...
+subtitle: "Mots justes, phrases pertinentes..."
 ref: traduction
+permalink: /traduction_fr/
 date:  2017-11-13 10:00:00 +0100
 categories: services
 lang: fr
 ---
-  <h1>Lorem Ipsum</h1>
+  
 <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
 "Il n’y a personne qui n’aime la souffrance pour elle-même, qui ne la recherche et qui ne la veuille pour elle-même…"</p>
 

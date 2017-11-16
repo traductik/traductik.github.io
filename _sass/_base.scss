@@ -91,7 +91,7 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: $brand-color;
+    color: $green-traductik;
     text-decoration: none;
 
     &:visited {
@@ -99,8 +99,9 @@ a {
     }
 
     &:hover {
-        color: $text-color;
+        color: $orange-traductik;
         text-decoration: underline;
+        
     }
 }
 

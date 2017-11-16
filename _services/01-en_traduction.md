@@ -1,14 +1,15 @@
 ---
-layout: post
+layout: page
 title:  "Translation"
-subtitle: The right word at the right place...
+subtitle: "The right word at the right place..."
 ref: traduction
+permalink: /traduction_en/
 date:  2017-11-13 10:00:00 +0100
 categories: services
 lang: en
 ---
+ 
 
-  <h1>Lorem Ipsum</h1>
 <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
 "Il n’y a personne qui n’aime la souffrance pour elle-même, qui ne la recherche et qui ne la veuille pour elle-même…"</p>
 

@@ -1,8 +1,9 @@
 ---
-layout: post
+layout: page
 title:  "Subtitling"
 subtitle: Text your images...
 ref: sous-titrage
+permalink: /sous-titrage_en/
 date:  2017-11-13 10:00:00 +0100
 categories: services
 lang: en

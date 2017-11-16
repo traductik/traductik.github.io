@@ -1,8 +1,9 @@
 ---
-layout: post
+layout: page
 title:  "Voice-over"
 subtitle: Voice your images...
 ref: voix-off
+permalink: /voix-off_en/
 date:  2017-11-13 10:00:00 +0100
 categories: services
 lang: en

@@ -1,8 +1,9 @@
 ---
-layout: post
+layout: page
 title:  "Sous-titrage"
 subtitle: Des mots pour vos images...
 ref: sous-titrage
+permalink: /sous-titrage_fr/
 date:  2017-11-13 10:00:00 +0100
 categories: services
 lang: fr

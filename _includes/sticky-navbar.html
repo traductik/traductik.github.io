@@ -1,63 +1,61 @@
 
-<style>
-body {
-  margin: 0;
-  background-color: #f1f1f1;
-}
-
-#sticky-navbar {
-  background-color: #ffff;
-  position: fixed;
-  top: -50px;
-  width: 100%;
-  display:block;
-  transition: top 0.3s;
-}
-
-#sticky-navbar a {
-  float: right;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 15px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-#sticky-navbar a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-</style>
-
  
 <div id="sticky-navbar">
-	     
-  {% assign pages=site.pages | where:"lang", page.lang %}
+	      
+	      <li class="dropdown">
+ {% assign pages=site.pages | where:"lang", page.lang %}
         {% for my_page in pages %}
           {% if my_page.title %}
-          <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+        
+	  <a href="javascript:void(0)" class="dropbtn">
+			 <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}
+			 
+			 <!----------------- Ajout d'un triangle en cas de sous-menu ------------------->
+			{% if site.[my_page.ref] %}
+  &nbsp;&#9661;
+{% endif %}</a>
+       </a> 
+    
+        
+          <div class="dropdown-content">
+         <!----------------- Niveau 2 (nested) ------------------->
+         <!----------------- Entrées de sous-menu ------------------->
+          {% assign subpages=site.[my_page.ref] | where:"lang", page.lang %}
+        {% for my_subpage in subpages %}
+          {% if my_subpage.title %}
+		  <a href="{{ my_subpage.url | prepend: site.baseurl }}">{{ my_subpage.title }}</a>
+         
           {% endif %}
         {% endfor %}
-    <span>{% include language-selector.html %}
+             <!----------------- Fin des entrées de sous-menu -------------------> 
+          
+      </div> <!----------------- Fin du niveau 2 (nested) ------------------->
+          
+          {% endif %}
+        {% endfor %}
+       <!----------------- Fin des entrées de menu -------------------> 
+    </li>
+        
+        
+<aside>{% include language-selector.html %}
    <style> 
 	.flag-icon {
 	z-index:10;
 	}
-</style></span>
+	
+</style></aside>
 
-    
+   
 </div>
 
 
 
 <script>
-// When the user scrolls down 120px from the top of the document, slide down the sticky-navbar
+// When the user scrolls down 50px from the top of the document, slide down the sticky-navbar
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-    if (document.body.scrollTop > 120 || document.documentElement.scrollTop > 120) {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         document.getElementById("sticky-navbar").style.top = "0";
     } else {
         document.getElementById("sticky-navbar").style.top = "-50px";

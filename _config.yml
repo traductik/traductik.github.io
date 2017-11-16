@@ -9,21 +9,28 @@
 title:
   en: TRADUC'TIK
   fr: TRADUC'TIK
+
 email: traductik@traductik.fr
+
 logo:
   en: img/logos/logo-traductik_EN.svg
   fr: img/logos/logo-traductik_FR.svg
+  
 description:
   en: Your partner for translating, interpreting, editing, subtitling, voice-over...
   fr: Votre partenaire en traduction, interprétation, rédaction, sous-titrages, voix off...
+  
 index:
   en: accueil_en
   fr: accueil_fr
+  
 feed:
   en: /en_feed.xml
-  fr: /fr_feed.xml
+  fr: /fr_feed.xml  
+
 baseurl: "/traductik" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
+
 twitter_username: traductik
 github_username:  traductik
 

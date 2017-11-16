@@ -1,8 +1,9 @@
 ---
-layout: post
+layout: page
 title:  "Interpretation"
 subtitle: The best connections...
 ref: interpretation
+permalink: /interpretation_en/
 date:  2017-11-13 10:00:00 +0100
 categories: services
 lang: en

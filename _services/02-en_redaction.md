@@ -1,8 +1,9 @@
 ---
-layout: post
+layout: page
 title:  "Editing"
 subtitle: Your words are your image...
 ref: redaction
+permalink: /redaction_en/
 date:  2017-11-13 10:00:00 +0100
 categories: services
 lang: en
