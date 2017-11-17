@@ -18,5 +18,13 @@
 
 </header><!----------------- Fin de header ------------------->
 
-    {% include language-selector.html %}
+   {% if page.layout!="post" and page.categories %}
+ 
+ {% include language-selector-{{ page.categories }}.html %}
+  
+  
+  {% else %}
+   
+    {% include language-selector-{{ page.layout }}.html %}
 
+{% endif %}

@@ -1,0 +1,52 @@
+
+
+<div class="wrapper language-selector"> <!---- Language selector ------->
+	
+	<ul>  <!----------------- Niveau 1 ------------------->
+		  <!----------------- Langue de la page ------------------->
+	     <li class="dropdown">
+			<a href="{{ [page.url | prepend: site.baseurl }}" class="{{ page.lang }}"><span style="z-index:-1;" class="flag-icon flag-icon-{{ page.lang }}"></span></a>
+   		
+		  <!----------------- Fin de langue de la page ------------------->
+
+
+
+{% assign other-languages=site.services | where:"ref", page.ref and lang!=page.lang %}
+
+{% if other-languages %}
+  &nbsp;&#9661;
+  
+{% endif %}</a>
+	
+	
+	
+	
+	<div class="dropdown-content">
+         <!----------------- Niveau 2 (nested) ------------------->
+         <!----------------- Entrées de sous-menu ------------------->
+         {% assign translations=site.services | where:"ref", page.ref | sort: 'lang' %}
+     
+ 
+         
+  {% for my_translation in translations %}
+ 
+  {% if my_translation.lang!=page.lang %}
+  
+  
+   <a href="{{ my_translation.url | prepend: site.baseurl }}" class="{{ my_translation.lang }}"><span style="z-index:1;" class="flag-icon flag-icon-{{ my_translation.lang }}"></span></a>
+  
+  {% endif %}
+  {% endfor %}
+  
+             <!----------------- Fin des entrées de sous-menu -------------------> 
+          
+      </div> <!----------------- Fin du niveau 2 (nested) -------->
+
+		
+	</li>
+	
+	</ul><!----------------- Fin du niveau 1 ------------------->
+  
+</div><!---- End of language selector ------->
+
+  
