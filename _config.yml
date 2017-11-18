@@ -9,6 +9,14 @@
 title:
   en: TRADUC'TIK
   fr: TRADUC'TIK
+  
+languages:
+  en: English
+  fr: French
+  
+languages-localized:
+  en: English
+  fr: Français
 
 email: traductik@traductik.fr
 
