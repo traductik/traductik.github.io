@@ -20,8 +20,14 @@
     &nbsp;{{ site.languages-localized[page.lang] }}&nbsp;&#9661;
 
    {% else %}
-   <span style="color:grey; font-size:0.75em;">Only in {{ site.languages[page.lang] }}, sorry !</span>
+ 
+    <div class="tooltip">Oups!
+  <span class="tooltiptext">Only in {{ site.languages[page.lang] }}, sorry !</span>
+</div>
 
+    
+    
+    
     
    {% endif %}</a>
 	

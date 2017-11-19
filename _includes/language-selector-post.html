@@ -6,25 +6,28 @@
 		  <!----------------- Langue de la page ------------------->
 	     <li class="dropdown">
 			<a href="{{ [page.url | prepend: site.baseurl }}" class="{{ page.lang }}"><span style="z-index:-1;" class="flag-icon flag-icon-{{ page.lang }}"></span></a>
-   		
+  		
 		  <!----------------- Fin de langue de la page ------------------->
+
 
 
 
    {% assign languages=site.posts | where:"ref", page.ref | sort: 'lang' %}
    
    
-   {% assign language=languages | where:"lang" , page.lang %}
+  {% assign language=languages | where:"lang" , page.lang %}
    
    {% if language!=languages %}
-    &nbsp;{{ site.languages-localized[page.lang] }}&nbsp;&#9661;
+   <span> &nbsp;{{ site.languages-localized[page.lang] }}&nbsp;&#9661;</span>
 
    {% else %}
-   <span style="color:grey; font-size:0.75em;">Only in {{ site.languages[page.lang] }}, sorry !</span>
-
+   
+   <div class="tooltip"> Oups...
+   <span class="tooltiptext">Only in {{ site.languages[page.lang] }}, sorry !</span>
+</div>
     
    {% endif %}
-</a>
+
 	
 	
 	

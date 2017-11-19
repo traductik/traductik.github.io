@@ -1,0 +1,60 @@
+
+/**
+ * Navigation haute
+ */
+
+.logo-header {
+ margin:10px;
+width:40%;
+margin-top:0.5em;
+margin-bottom:0.25em
+}
+
+.en:lang(en), .fr:lang(fr) {
+	 font-size: 1.25em;
+	 line-height: 0.75em;
+	}
+
+
+.language-selector   {
+	float: right;
+	padding-left: 0;
+	}
+
+.dropdown:hover .dropbtn {
+    background-color: grey;
+}
+
+li.dropdown {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+	background-color: beige;
+}
+
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+

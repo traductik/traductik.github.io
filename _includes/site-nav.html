@@ -44,8 +44,24 @@
           
           {% endif %}
         {% endfor %}
-       <!----------------- Fin des entrées de menu -------------------> 
-    </li>
+       <!----------------- Fin des entrées de menu ------------------->
+       
+       </li>
+   <span> <!----------------- Insertion du sélecteur de langue ------------------->
+    {% if page.layout!="post" and page.categories %}
+ 
+ {% include language-selector-{{ page.categories }}.html %}
+  
+  
+  {% else %}
+   
+    {% include language-selector-{{ page.layout }}.html %}
+
+{% endif %}
+    </span>  <!----------------- Fin de insertion du sélecteur de langue ------------------->
+    
+    
+    
     </ul><!----------------- Fin du niveau 1 ------------------->
     </div><!----------------- Fin de trigger dans nav ------------------->
     
