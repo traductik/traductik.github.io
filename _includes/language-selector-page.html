@@ -12,17 +12,21 @@
 
 
 
+
+
    {% assign languages=site.pages | where:"ref", page.ref | sort: 'lang' %}
    
    
   {% assign language=languages | where:"lang" , page.lang %}
    
    {% if language!=languages %}
-    &nbsp;{{ site.languages-localized[page.lang] }}&nbsp;&#9661;
+   <span> &nbsp;{{ site.languages-localized[page.lang] }}&nbsp;&#9661;</span>
 
    {% else %}
-   <span style="color:grey; font-size:0.75em;">Only in {{ site.languages[page.lang] }}, sorry !</span>
-
+   
+   <div class="tooltip"> Oups...
+   <span class="tooltiptext">Only in {{ site.languages[page.lang] }}, sorry !</span>
+</div>
     
    {% endif %}
 	
