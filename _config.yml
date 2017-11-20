@@ -37,7 +37,7 @@ feed:
   fr: /fr_feed.xml  
 
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "www.01traduction.fr" # the base hostname & protocol for your site
+url: "http://www.01traduction.fr" # the base hostname & protocol for your site
 
 twitter_username: traductik
 github_username:  traductik
