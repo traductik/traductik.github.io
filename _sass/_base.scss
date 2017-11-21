@@ -177,9 +177,9 @@ pre {
 /**
  * Wrapper du header
  */
-.header-wrapper {
-    max-width: -webkit-calc(#{$content-width * 1.5} - (#{$spacing-unit} * 2));
-    max-width: calc(#{$content-width * 1.5} - (#{$spacing-unit} * 2));
+#header-wrapper {
+    max-width: -webkit-calc(#{$content-width } - (#{$spacing-unit} * 2));
+    max-width: calc(#{$content-width } - (#{$spacing-unit} * 2));
     margin-right: auto;
     margin-left: auto;
     padding-right: $spacing-unit;
@@ -187,8 +187,8 @@ pre {
     @extend %clearfix;
 
     @include media-query($on-laptop) {
-        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+        max-width: -webkit-calc(#{$content-width } - (#{$spacing-unit}));
+        max-width:         calc(#{$content-width } - (#{$spacing-unit}));
         padding-right: $spacing-unit / 2;
         padding-left: $spacing-unit / 2;
     }
