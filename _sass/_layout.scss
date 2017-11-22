@@ -41,7 +41,7 @@
     }
 }
 
-#site-nav {
+.site-nav {
     float: right;
     line-height: 56px;
     font-size: 0.9em;
@@ -59,7 +59,9 @@
             margin-right: 20px;
         }
     }
-    
+     .active-link {
+        color: $orange-traductik;
+        }
 
        /**
  * Sélecteur de langue
