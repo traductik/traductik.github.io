@@ -21,24 +21,35 @@
           {% if my_page.title %}
          <li class="dropdown">
 	  <a href="javascript:void(0)" class="dropbtn"><!----------------- Drop button ------------------->
-			 <a  {% if  page.title == my_page.title %}class="page-link active-link"{% else %}class="page-link" {% endif %} href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}
-			{% assign subpages=site.[my_page.ref] | where:"lang", page.lang %}
+			 <a  {% if  page.title == my_page.title %}class="active-link"{% else %}class="page-link" {% endif %} href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}
+			
 			
 			{% if site.[my_page.ref] %}
-   <span> &nbsp;&#9661;</span>
-   {% elsif site.[my_page.ref] and my_subpage.ref == page.ref %}
-   <span> TEST</span>
-{% endif %}</a>
-       </a> <!----------------- End of drop button ------------------->
+			
+   <span 
+   
+   
+   
+   
+   {% if page.categories %}class="active-link" {% endif %}  >
+	   
+	   &nbsp;&#9661;
+	   
+	   </span>
+   {% endif %}
+  
+</a>
+       
+       <!----------------- End of drop button ------------------->
         
           <div class="dropdown-content">
          <!----------------- Niveau 2 (nested) ------------------->
          <!----------------- Entrées de sous-menu ------------------->
           
-          
+       {% assign subpages=site.[my_page.ref] | where:"lang", page.lang %}   
         {% for my_subpage in subpages %}
       
-		  <a {% if  my_subpage.ref == page.ref %}class="page-link" style="color:red;"{% else %}class="page-link" {% endif %} href="{{ my_subpage.url | prepend: site.baseurl }}">{{ my_subpage.title }}</a>
+		  <a {% if  my_subpage.ref == page.ref %}class="active-link" {% else %}class="page-link" {% endif %} href="{{ my_subpage.url | prepend: site.baseurl }}">{{ my_subpage.title }}</a>
         
         {% endfor %}
              <!----------------- Fin des entrées de sous-menu -------------------> 
