@@ -21,7 +21,7 @@
           {% if my_page.title %}
          <li class="dropdown">
 	  <a href="javascript:void(0)" class="dropbtn"><!----------------- Drop button ------------------->
-			 <a  {% if  page.title == my_page.title %}class="active-link"{% else %}class="page-link" {% endif %} href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}
+			 <a  {% if  page.title == my_page.title %}class="active-link"{% elsif page.categories contains my_page.ref %}class="active-link" {% else %}class="page-link" {% endif %} href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}
 			
 			
 			{% if site.[my_page.ref] %}
