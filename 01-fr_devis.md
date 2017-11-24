@@ -2,6 +2,7 @@
 layout: page
 title: Devis rapide
 permalink: /devis_fr/
+breadcrumb: Devis rapide
 ref: devis
 lang: fr
 ---

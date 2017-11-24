@@ -32,6 +32,10 @@ index:
   en: accueil_en
   fr: accueil_fr
   
+index-name:
+  en: Home
+  fr: Accueil
+  
 feed:
   en: /en_feed.xml
   fr: /fr_feed.xml  

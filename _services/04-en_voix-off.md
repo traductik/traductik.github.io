@@ -1,9 +1,10 @@
 ---
 layout: page
-title:  "Voice-over"
+title:  Voice-over
 subtitle: Voice your images...
 ref: voix-off
-permalink: /voix-off_en/
+permalink: /services_en/voice-over/
+breadcrumb: Voice-over
 date:  2017-11-13 10:00:00 +0100
 categories: services
 lang: en

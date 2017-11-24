@@ -1,9 +1,10 @@
 ---
 layout: page
-title:  "Voix-off"
+title:  Voix-off
 subtitle: Des voix pour vos images...
 ref: voix-off
-permalink: /voix-off_fr/
+permalink: /services_fr/voix-off/
+breadcrumb: Voix-off
 date:  2017-11-13 10:00:00 +0100
 categories: services
 lang: fr

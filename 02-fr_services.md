@@ -2,6 +2,7 @@
 layout: page
 title: Services
 permalink: /services_fr/
+breadcrumb: Services
 ref: services
 lang: fr
 ---
