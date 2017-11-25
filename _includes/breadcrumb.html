@@ -1,6 +1,6 @@
   <div style="margin-top: 1em;">
     <ol class="breadcrumb">
-    {% unless page.ref contains "index" %}
+    {% unless page.ref contains "index" or page.layout contains "post" %}
     <li><a href="{{ site.baseurl }}/{{ site.index.[page.lang] }}">{{ site.index-name.[page.lang] }}</a></li>{% endunless %}
     {% capture page_url_without_index_html %}{{ page.url | remove: "/index.html" }}{% endcapture %}
     {% assign splitted_url_parts = page_url_without_index_html | split: '/' %}
@@ -21,10 +21,19 @@
             {% endif %}
         {% endfor %}
     {% endfor %}
+    
+    
+ 
+        
+        
     {% if page.categories %}
+    {% unless page.layout contains "post" %}
     <li class="active">
-                    <a href="{{ page.permalink }}">{{ page.breadcrumb}} </a>
+                    <a href="{{ page.permalink }}">{{ page.breadcrumb }} </a>
                 </li>
+                
+                {% endunless %}
+           
                 {% endif %}
     </ol>
       </div>

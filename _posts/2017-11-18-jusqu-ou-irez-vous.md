@@ -2,6 +2,8 @@
 layout: post
 title:  "Jusqu'où irez-vous ?"
 ref: whereto
+permalink: /blog_fr/agency/
+breadcrumb: Agence
 date:   2017-11-18 18:43:44 +0100
 categories: agency
 lang: fr

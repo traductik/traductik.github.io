@@ -2,6 +2,8 @@
 layout: post
 title:  "Bienvenue sur Jekyll !"
 ref: welcome
+permalink: /blog_fr/jekyll/
+breadcrumb: Bienvenue
 date:   2016-02-29 09:48:44 +0100
 categories: jekyll update
 lang: fr
