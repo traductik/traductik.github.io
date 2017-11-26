@@ -30,9 +30,11 @@
 
 		</div><!----------------- Fin de logo header div#2 à gauche------------------->
 
-
+{% if page.layout contains "post" %}
+{% include breadcrumb_posts.html path=page.path title=page.title %}
+{% else %}
 {% include breadcrumb.html %}
-
+{% endif %}
 </header><!----------------- Fin de site header MAIN ------------------->
 
 </div>  <!----------------- Fin du wrapper de l'en-tête ------------------->
