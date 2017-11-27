@@ -2,6 +2,7 @@
 layout: page
 title: Services
 permalink: /services_en/
+nav: navbar
 breadcrumb: Services
 ref: services
 lang: en

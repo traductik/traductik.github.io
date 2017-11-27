@@ -16,7 +16,8 @@
 		
 		<ul>  <!----------------- Niveau 1 ------------------->
 		  <!----------------- Entrées de menu ------------------->
-        {% assign pages=site.pages | where:"lang", page.lang %}
+       {% assign navpages=site.pages | where:"nav", "navbar"  %}
+        {% assign pages=navpages | where:"lang", page.lang %}
         {% for my_page in pages %}
           {% if my_page.title %}
          <li class="dropdown">
@@ -72,6 +73,7 @@
     {% include language-selector-{{ page.layout }}.html %}
 
 {% endif %}
+
     </span>  <!----------------- Fin de insertion du sélecteur de langue ------------------->
     
     

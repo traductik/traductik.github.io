@@ -6,15 +6,13 @@
 		  <!----------------- Langue de la page ------------------->
 	     <li class="dropdown">
 			<a href="{{ [page.url | prepend: site.baseurl }}" class="{{ page.lang }}"><span style="z-index:-1;" class="flag-icon flag-icon-{{ page.lang }}"></span></a>
-   		
+  		
 		  <!----------------- Fin de langue de la page ------------------->
 
 
 
 
-
-
-   {% assign languages=site.pages  | where:"ref", page.ref | sort: 'lang' %}
+   {% assign languages=site.welcome | where:"ref", page.ref | sort: 'lang' %}
    
    
   {% assign language=languages | where:"lang" , page.lang %}
@@ -29,6 +27,7 @@
 </div>
     
    {% endif %}
+
 	
 	
 	
@@ -36,7 +35,7 @@
 	<div class="dropdown-content">
          <!----------------- Niveau 2 (nested) ------------------->
          <!----------------- Entrées de sous-menu ------------------->
-         {% assign translations=site.pages | where:"ref", page.ref | sort: 'lang' %}
+         {% assign translations=site.welcome | where:"ref", page.ref | sort: 'lang' %}
      
  
          

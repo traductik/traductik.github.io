@@ -13,9 +13,11 @@
 <div class="wrapper">
     {% include header.html %}
     </div>
+    {% unless page.nav == "blogwelcome" %}
     <div class="wrapper">
     {% include blog-right.html %}
     </div>
+    {% endunless %}
     <div class="page-content">
       <div class="wrapper">
         {{ content }}
