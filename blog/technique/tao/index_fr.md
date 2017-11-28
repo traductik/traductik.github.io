@@ -1,19 +1,19 @@
 ---
 layout: page
-title:  List of the articles
-breadcrumb: "Blog articles"
-permalink: /blog/home_en/
-date:   2016-02-29 09:48:44 +0100
-nav: blogwelcome
-ref: blogwelcome
-lang: en
+title:  "Articles & actualités sur la TAO"
+breadcrumb: "Articles & actualités sur la TAO"
+permalink: /blog/technique/tao_fr/
+date:   2017-11-28
+nav: nosideblog
+ref: taowelcome
+lang: fr
 ---
 
 
 
 <!----------------- Liste des articles de blog ------------------->
   <div class="wrapper">
-  <h1 class="page-heading">Post categories</h1>
+  <h1 class="page-heading">Articles classés par catégorie</h1>
  <ul class="post-list">
     {% assign posts=site.posts | where:"lang", page.lang %}
     {% for post in posts %}

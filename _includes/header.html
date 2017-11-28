@@ -31,9 +31,9 @@
 		</div><!----------------- Fin de logo header div#2 à gauche------------------->
 
 {% if page.layout contains "post" %}
-{% include breadcrumb_posts.html path=page.path title=page.title %}
+{% include breadcrumbs/breadcrumb_posts.html path=page.path title=page.title %}
 {% else %}
-{% include breadcrumb.html %}
+{% include breadcrumbs/breadcrumb.html %}
 {% endif %}
 </header><!----------------- Fin de site header MAIN ------------------->
 

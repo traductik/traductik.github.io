@@ -65,12 +65,12 @@
    <span> <!----------------- Insertion du sélecteur de langue ------------------->
     {% if page.layout!="post" and page.categories %}
  
- {% include language-selector-{{ page.categories }}.html %}
+ {% include selectors/language-selector-{{ page.categories }}.html %}
   
   
   {% else %}
    
-    {% include language-selector-{{ page.layout }}.html %}
+    {% include selectors/language-selector-{{ page.layout }}.html %}
 
 {% endif %}
 

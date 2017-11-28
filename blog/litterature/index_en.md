@@ -1,19 +1,19 @@
 ---
 layout: page
-title:  Liste des articles
-breadcrumb: "Articles du blog"
-permalink: /blog/home_fr/
-date:   2016-02-29 09:48:44 +0100
-nav: blogwelcome
-ref: blogwelcome
-lang: fr
+title:  "Literature News & Articles"
+breadcrumb: "Literature News & Articles"
+permalink: /blog/litterature_en/
+date:   2017-11-28
+nav: nosideblog
+ref: litteraturewelcome
+lang: en
 ---
 
 
 
 <!----------------- Liste des articles de blog ------------------->
   <div class="wrapper">
-  <h1 class="page-heading">Articles classés par catégorie</h1>
+  <h1 class="page-heading">Post categories</h1>
  <ul class="post-list">
     {% assign posts=site.posts | where:"lang", page.lang %}
     {% for post in posts %}

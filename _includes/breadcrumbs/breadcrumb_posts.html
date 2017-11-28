@@ -18,7 +18,7 @@
 	{% if forloop.last %}
 	{% if include.title %}{{include.title}}{% else %}{{ category }}{% endif %}
 	{% else %}
-	<a href="{{ route | absolute_url }}" > {{ category }}</a> 
+	<a href="{{ route | absolute_url }}_{{ page.lang }}" > {{ category }}</a> 
 	{% endif %}
 	{% endfor %}
 </li>
