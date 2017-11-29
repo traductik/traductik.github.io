@@ -22,7 +22,15 @@
         {% endfor %}
     {% endfor %}
     
-    
+     {% if page.categories %}
+    {% unless page.layout contains "post" %}
+    <li class="active">
+                    <a href="{{ page.permalink }}">{{ page.breadcrumb }} </a>
+                </li>
+                
+                {% endunless %}
+           
+{% endif %}
  
         
         

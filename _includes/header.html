@@ -32,6 +32,8 @@
 
 {% if page.layout contains "post" %}
 {% include breadcrumbs/breadcrumb_posts.html path=page.path title=page.title %}
+{% elsif page.permalink contains "blog" %}
+{% include breadcrumbs/breadcrumb_posts.html path=page.path title=page.title %}
 {% else %}
 {% include breadcrumbs/breadcrumb.html %}
 {% endif %}

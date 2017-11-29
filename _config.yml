@@ -54,7 +54,7 @@ collections:
     output: true
     en: services
     fr: services
-    permalink: /blog/:path/
+    permalink: /services/:path/
   
 
 
