@@ -1,7 +1,7 @@
   <div style="margin-top: 1em;">
     <ol class="breadcrumb">
     {% unless page.ref contains "index" %}
-    <li><a href="{{ site.baseurl }}/{{ site.index.[page.lang] }}">{{ site.index-name.[page.lang] }}</a></li>{% endunless %}
+    <li><a href="{{ site.url }}/{{ site.index.[page.lang] }}">{{ site.index-name.[page.lang] }}</a></li>{% endunless %}
     {% capture page_url_without_index_html %}{{ page.url | remove: "/index.html" }}{% endcapture %}
     {% assign splitted_url_parts = page_url_without_index_html | split: '/' %}
     {% capture forLoopMaxInt %}{{ splitted_url_parts.size | minus:1 }}{% endcapture %}
@@ -16,7 +16,7 @@
                 {% capture breadcrumb_page_page_url_without_index_html %}{{ breadcrumb_page.url | remove: "index.html" }}{% endcapture %}
                     {% assign j = forLoopMaxInt | plus: 0 %}
                     <li {% if i == j %}class="active"{% endif %}>
-                    <a href="{{ site.baseurl }}{{breadcrumb_page_page_url_without_index_html}}">{{breadcrumb_page.breadcrumb}}</a>
+                    <a href="{{ site.url }}{{breadcrumb_page_page_url_without_index_html}}">{{breadcrumb_page.breadcrumb}}</a>
                 </li>
             {% endif %}
         {% endfor %}

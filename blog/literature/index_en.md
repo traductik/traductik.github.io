@@ -1,11 +1,11 @@
 ---
 layout: page
-title:  "Computing News & Articles"
-breadcrumb: "Computing News & Articles"
-permalink: /blog/technique/informatique_en/
+title:  "Literature News & Articles"
+breadcrumb: "Literature News & Articles"
+permalink: /blog/literature_en/
 date:   2017-11-28
 nav: nosideblog
-ref: informatiquewelcome
+ref: litteraturewelcome
 lang: en
 ---
 

@@ -1,19 +1,19 @@
 ---
 layout: page
-title:  "CAT News & Articles"
-breadcrumb: "CAT News & Articles"
-permalink: /blog/technique/tao_en/
+title:  "Articles & actualités sur la TAO"
+breadcrumb: "Articles & actualités sur la TAO"
+permalink: /blog/technique/cat_fr/
 date:   2017-11-28
 nav: nosideblog
 ref: taowelcome
-lang: en
+lang: fr
 ---
 
 
 
 <!----------------- Liste des articles de blog ------------------->
   <div class="wrapper">
-  <h1 class="page-heading">Post categories</h1>
+  <h1 class="page-heading">Articles classés par catégorie</h1>
  <ul class="post-list">
     {% assign posts=site.posts | where:"lang", page.lang %}
     {% for post in posts %}

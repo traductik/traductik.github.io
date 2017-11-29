@@ -52,8 +52,10 @@ permalink: /:categories/:title/
 collections:
   services:
     output: true
-    permalink: /services/:path/
-
+    en: services
+    fr: services
+    permalink: /blog/:path/
+  
 
 
 # Build settings

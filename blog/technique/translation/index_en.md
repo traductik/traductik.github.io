@@ -1,19 +1,19 @@
 ---
 layout: page
-title:  "Articles & actualités sur la TAO"
-breadcrumb: "Articles & actualités sur la TAO"
-permalink: /blog/technique/tao_fr/
+title:  "Translation News & Articles"
+breadcrumb: "Translation News & Articles"
+permalink: /blog/technique/translation_en/
 date:   2017-11-28
 nav: nosideblog
-ref: taowelcome
-lang: fr
+ref: traductionwelcome
+lang: en
 ---
 
 
 
 <!----------------- Liste des articles de blog ------------------->
   <div class="wrapper">
-  <h1 class="page-heading">Articles classés par catégorie</h1>
+  <h1 class="page-heading">Post categories</h1>
  <ul class="post-list">
     {% assign posts=site.posts | where:"lang", page.lang %}
     {% for post in posts %}

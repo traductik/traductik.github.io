@@ -1,24 +1,24 @@
 
 <div style="margin-top: 1em;">
     <ol class="breadcrumb">
-{% assign categories = include.path | split:"/" %}
-	{% assign filename_without_extension = categories | last | split:"." | first %}
-	{% if categories contains "_posts" or filename_without_extension == "index" %}
+{% assign blogcats = include.path | split:"/" %}
+	{% assign filename_without_extension = blogcats | last | split:"." | first %}
+	{% if blogcats contains "_posts" or filename_without_extension == "index" %}
 	{% comment %} posts are like /docs/python/_posts/2016-06-06-foobar.md {% endcomment %}
 	{% comment %} OR pages are index.* i.e.: like /docs/python/index.md or index.html {% endcomment %}
-	{% assign categories = categories | pop %}
+	{% assign blogcats = blogcats | pop %}
 	{% endif %}
 
 	{% assign route="" %}
 
-	<li><a href="{{ site.baseurl }}/{{ site.index.[page.lang] }}">{{ site.index-name.[page.lang] }}</a></li>
-	{% for category in categories %}
+	<li><a href="{{ site.url }}/{{ site.index.[page.lang] }}">{{ site.index-name.[page.lang] }}</a></li>
+	{% for blogcat in blogcats %}
 	<li> 
-	{% assign route = route | append: '/' | append: category %}
+	{% assign route = route | append: '/' | append: blogcat %}
 	{% if forloop.last %}
-	{% if include.title %}{{include.title}}{% else %}{{ category }}{% endif %}
+	{% if include.title %}{{include.title}}{% else %}{{ blogcat }}{% endif %}
 	{% else %}
-	<a href="{{ route | absolute_url }}_{{ page.lang }}" > {{ category }}</a> 
+	<a href="{{ route | relaitive_url }}_{{ page.lang }}" > {{ blogcat }}</a> 
 	{% endif %}
 	{% endfor %}
 </li>

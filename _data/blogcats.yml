@@ -1,0 +1,16 @@
+- name: technique
+  en: technique
+  fr: technique
+
+- name: news
+  en: news
+  fr: actualités
+
+- name: literature
+  en: literature
+  fr: littérature
+
+- name: assets
+  en: assets
+  fr: atouts
+

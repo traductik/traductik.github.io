@@ -1,11 +1,11 @@
 ---
 layout: page
-title:  "Translation News & Articles"
-breadcrumb: "Translation News & Articles"
-permalink: /blog/technique/traduction_en/
+title:  "Stylistic News & Articles"
+breadcrumb: "Stylistic News & Articles"
+permalink: /blog/technique/stylistic_en/
 date:   2017-11-28
 nav: nosideblog
-ref: traductionwelcome
+ref: stylistiquewelcome
 lang: en
 ---
 

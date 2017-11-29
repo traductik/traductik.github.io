@@ -13,3 +13,13 @@ lang: fr
 
 Vos produits et services plaisent et se vendent bien, mais... en France surtout, ou en France seulement. Comment faire mieux ? Très simplement...
 
+<ul>
+
+{% for blogcat in site.data.blogcats %}
+
+  <li>
+    Catégorie : {{ blogcat.name }} / {{ page.lang }}: {{ blogcat[page.lang] }}
+    
+  </li>
+{% endfor %}
+</ul>

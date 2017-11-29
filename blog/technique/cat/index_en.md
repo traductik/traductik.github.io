@@ -1,11 +1,11 @@
 ---
 layout: page
-title:  "Literature News & Articles"
-breadcrumb: "Literature News & Articles"
-permalink: /blog/litterature_en/
+title:  "CAT News & Articles"
+breadcrumb: "CAT News & Articles"
+permalink: /blog/technique/cat_en/
 date:   2017-11-28
 nav: nosideblog
-ref: litteraturewelcome
+ref: taowelcome
 lang: en
 ---
 

@@ -1,19 +1,19 @@
 ---
 layout: page
-title:  "Articles & actualités informatiques"
-breadcrumb: "Articles & actualités informatiques"
-permalink: /blog/technique/informatique_fr/
+title:  "Computing News & Articles"
+breadcrumb: "Computing News & Articles"
+permalink: /blog/technique/computing_en/
 date:   2017-11-28
 nav: nosideblog
 ref: informatiquewelcome
-lang: fr
+lang: en
 ---
 
 
 
 <!----------------- Liste des articles de blog ------------------->
   <div class="wrapper">
-  <h1 class="page-heading">Articles classés par catégorie</h1>
+  <h1 class="page-heading">Post categories</h1>
  <ul class="post-list">
     {% assign posts=site.posts | where:"lang", page.lang %}
     {% for post in posts %}

@@ -1,11 +1,11 @@
 ---
 layout: page
-title:  "Articles & actualités stylistiques"
-breadcrumb: "Articles & actualités stylistiques"
-permalink: /blog/technique/stylistique_fr/
+title:  "Actualités générales"
+breadcrumb: "Actualités générales"
+permalink: /blog/news_fr/
 date:   2017-11-28
 nav: nosideblog
-ref: stylistiquewelcome
+ref: actualiteswelcome
 lang: fr
 ---
 

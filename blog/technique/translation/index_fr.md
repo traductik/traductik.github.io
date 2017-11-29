@@ -1,19 +1,19 @@
 ---
 layout: page
-title:  "Stylistic News & Articles"
-breadcrumb: "Stylistic News & Articles"
-permalink: /blog/technique/stylistique_en/
+title:  "Articles & actualités de la traduction"
+breadcrumb: "Articles & actualités de la traduction"
+permalink: /blog/technique/translation_fr/
 date:   2017-11-28
 nav: nosideblog
-ref: stylistiquewelcome
-lang: en
+ref: traductionwelcome
+lang: fr
 ---
 
 
 
 <!----------------- Liste des articles de blog ------------------->
   <div class="wrapper">
-  <h1 class="page-heading">Post categories</h1>
+  <h1 class="page-heading">Articles classés par catégorie</h1>
  <ul class="post-list">
     {% assign posts=site.posts | where:"lang", page.lang %}
     {% for post in posts %}

@@ -1,11 +1,11 @@
 ---
 layout: page
-title:  "Articles & actualités de la traduction"
-breadcrumb: "Articles & actualités de la traduction"
-permalink: /blog/technique/traduction_fr/
+title:  "Articles & actualités informatiques"
+breadcrumb: "Articles & actualités informatiques"
+permalink: /blog/technique/computing_fr/
 date:   2017-11-28
 nav: nosideblog
-ref: traductionwelcome
+ref: informatiquewelcome
 lang: fr
 ---
 

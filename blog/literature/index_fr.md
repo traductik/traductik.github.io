@@ -1,19 +1,19 @@
 ---
 layout: page
-title:  "General News"
-breadcrumb: "General News"
-permalink: /blog/actualites_en/
+title:  "Articles & actualités littéraires"
+breadcrumb: "Articles & actualités littéraires"
+permalink: /blog/literature_fr/
 date:   2017-11-28
 nav: nosideblog
-ref: actualiteswelcome
-lang: en
+ref: litteraturewelcome
+lang: fr
 ---
 
 
 
 <!----------------- Liste des articles de blog ------------------->
   <div class="wrapper">
-  <h1 class="page-heading">Post categories</h1>
+  <h1 class="page-heading">Articles classés par catégorie</h1>
  <ul class="post-list">
     {% assign posts=site.posts | where:"lang", page.lang %}
     {% for post in posts %}
