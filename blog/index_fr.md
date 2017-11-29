@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  Liste des articles
-breadcrumb: "Articles du blog"
+breadcrumb: Tous-les-articles
 permalink: /blog_fr
 date:   2017-11-28
 nav: nosideblog
