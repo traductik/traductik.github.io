@@ -11,7 +11,7 @@
 
 	{% assign route="" %}
 
-	<li><a href="/{{ site.index.[page.lang] }}">{{ site.index-name.[page.lang] }}</a></li>
+	<li><a href="{{ site.index.[page.lang] }}">{{ site.index-name.[page.lang] }}</a></li>
 	{% for blogcat in blogcats %}
 	<li> 
 	{% assign route = route | append: '/' | append: blogcat %}
