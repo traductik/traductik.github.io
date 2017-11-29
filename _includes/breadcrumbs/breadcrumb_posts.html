@@ -11,14 +11,14 @@
 
 	{% assign route="" %}
 
-	<li><a href="/{{ site.index.[page.lang] }}">{{ site.index-name.[page.lang] }}</a></li>
+	<li><a href="{{ site.url }}/{{ site.index.[page.lang] }}">{{ site.index-name.[page.lang] }}</a></li>
 	{% for blogcat in blogcats %}
 	<li> 
 	{% assign route = route | append: '/' | append: blogcat %}
 	{% if forloop.last %}
 	{% if include.title %}{{include.title}}{% else %}{{ blogcat }}{% endif %}
 	{% else %}
-	<a href="{{ route | absolute_url }}_{{ page.lang }}" > {{ blogcat }}</a> 
+	<a href="{{ route | relative_url }}_{{ page.lang }}" > {{ blogcat }}</a> 
 	{% endif %}
 	{% endfor %}
 </li>
