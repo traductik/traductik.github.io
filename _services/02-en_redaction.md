@@ -3,7 +3,7 @@ layout: page
 title:  Editing
 subtitle: Your words are your image...
 ref: redaction
-permalink: /services/services_en/editing/
+permalink: /services_en/editing/
 breadcrumb: Editing
 date:  2017-11-13 10:00:00 +0100
 categories: services

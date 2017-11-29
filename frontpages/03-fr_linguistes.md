@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Linguistes
-permalink: /linguistes/linguistes_fr/
+permalink: /linguistes_fr/
 nav: navbar
 breadcrumb: Linguistes
 ref: linguistes

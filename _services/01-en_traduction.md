@@ -3,7 +3,7 @@ layout: page
 title:  Translation
 subtitle: "The right word at the right place..."
 ref: traduction
-permalink: /services/services_en/translation/
+permalink: /services_en/translation/
 breadcrumb: Translation
 date:  2017-11-13 10:00:00 +0100
 categories: services

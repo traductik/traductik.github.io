@@ -3,7 +3,7 @@ layout: page
 title:  Rédaction
 subtitle: Votre image en mots...
 ref: redaction
-permalink: /services/services_fr/redaction/
+permalink: /services_fr/redaction/
 breadcrumb: Rédaction
 date:  2017-11-13 10:00:00 +0100
 categories: services

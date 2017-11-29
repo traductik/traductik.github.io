@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Devis rapide
-permalink: /devis/devis_fr/
+permalink: /devis_fr/
 nav: navbar
 breadcrumb: Devis rapide
 ref: devis

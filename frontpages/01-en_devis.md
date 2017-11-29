@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Express quote
-permalink: /devis/devis_en/
+permalink: /devis_en/
 nav: navbar
 breadcrumb: Express quote
 ref: devis

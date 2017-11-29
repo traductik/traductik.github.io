@@ -3,7 +3,7 @@ layout: page
 title:  Subtitling
 subtitle: Text your images...
 ref: sous-titrage
-permalink: /services/services_en/subtitling/
+permalink: /services_en/subtitling/
 breadcrumb: Subtitling
 date:  2017-11-13 10:00:00 +0100
 categories: services

@@ -3,7 +3,7 @@ layout: page
 title:  Sous-titrage
 subtitle: Des mots pour vos images...
 ref: sous-titrage
-permalink: /services/services_fr/sous-titrage/
+permalink: /services_fr/sous-titrage/
 breadcrumb: Sous-titrage
 date:  2017-11-13 10:00:00 +0100
 categories: services

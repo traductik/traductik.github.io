@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Services
-permalink: /services/services_fr/
+permalink: /services_fr/
 nav: navbar
 breadcrumb: Services
 ref: services
