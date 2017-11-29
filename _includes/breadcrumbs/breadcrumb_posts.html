@@ -18,7 +18,7 @@
 	{% if forloop.last %}
 	{% if include.title %}{{include.title}}{% else %}{{ blogcat }}{% endif %}
 	{% else %}
-	<a href="{{ route | relaitive_url }}_{{ page.lang }}" > {{ blogcat }}</a> 
+	<a href="{{ route | relative_url }}_{{ page.lang }}" > {{ blogcat }}</a> 
 	{% endif %}
 	{% endfor %}
 </li>
