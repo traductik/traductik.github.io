@@ -21,7 +21,7 @@
 <li>
 {% for c in (1..length) %}
     {% capture path %}{{ path }}/{{pathParts[c]}}{% endcapture %}
-  <a href="{{ path  | absolute_url }}">{{ path | split: "/" | last | prepend: "&nbsp;|&nbsp;" }}</a>
+  <a href="{{ path | relative_url }}">{{ path | split: "/" | last | prepend: "&nbsp;|&nbsp;" }}</a>
 {% endfor %}
 </li>
 

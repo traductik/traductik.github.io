@@ -46,13 +46,9 @@ url: "01traduction.fr/" # the base hostname & protocol for your site
 twitter_username: traductik
 github_username:  traductik
 
+permalink: /blog_fr/:title/
+permalink: /blog_en/:title/
 
-plugins:
-  - jekyll-relative-links
-
-relative_links:
-  enabled:     true
-  collections: true
 
 #Collections
 collections:
@@ -61,13 +57,7 @@ collections:
     en: services
     fr: services
     permalink: /services/:path/
-  blog_fr:
-    output: true
-    permalink: /blog_fr/:path/
-  blog_en:
-    output: true
-    permalink: /blog_en/:path/
-  
+ 
 
 
 # Build settings
