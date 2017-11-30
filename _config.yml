@@ -52,7 +52,7 @@ plugins:
 
 relative_links:
   enabled:     true
-  collections: false
+  collections: true
 
 #Collections
 collections:
