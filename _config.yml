@@ -61,6 +61,12 @@ collections:
     en: services
     fr: services
     permalink: /services/:path/
+  blog_fr:
+    output: true
+    permalink: /blog_fr/:path/
+  blog_en:
+    output: true
+    permalink: /blog_en/:path/
   
 
 
