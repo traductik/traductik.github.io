@@ -232,6 +232,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  jekyll-relative-links
   jekyll-seo-tag
   jekyll-sitemap
   jekyll-theme-cayman

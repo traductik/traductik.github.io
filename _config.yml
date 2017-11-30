@@ -47,6 +47,12 @@ twitter_username: traductik
 github_username:  traductik
 
 
+plugins:
+  - jekyll-relative-links
+
+relative_links:
+  enabled:     true
+  collections: false
 
 #Collections
 collections:
