@@ -2,7 +2,7 @@
 layout: page
 title:  "Literature News & Articles"
 breadcrumb: "Literature News & Articles"
-permalink: /blog/literature_en/
+permalink: /blog_en/literature/
 date:   2017-11-28
 nav: nosideblog
 ref: litteraturewelcome

@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "My first computing post!"
+permalink: /blog_en/technique/computing/my-first-computing-post/
 ref: jekupdate
 date:   2016-02-29 09:48:44 +0100
 lang: en

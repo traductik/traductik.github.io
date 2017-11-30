@@ -2,7 +2,7 @@
 layout: page
 title:  "Computing News & Articles"
 breadcrumb: "Computing News & Articles"
-permalink: /blog/technique/computing_en/
+permalink: /blog_en/technique/computing/
 date:   2017-11-28
 nav: nosideblog
 ref: informatiquewelcome

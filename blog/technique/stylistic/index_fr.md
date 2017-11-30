@@ -2,7 +2,7 @@
 layout: page
 title:  "Articles & actualités stylistiques"
 breadcrumb: "Articles & actualités stylistiques"
-permalink: /blog/technique/stylistic_fr/
+permalink: /blog_fr/technique/stylistique/
 date:   2017-11-28
 nav: nosideblog
 ref: stylistiquewelcome

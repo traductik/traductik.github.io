@@ -2,7 +2,7 @@
 layout: page
 title:  "Articles & actualités littéraires"
 breadcrumb: "Articles & actualités littéraires"
-permalink: /blog/literature_fr/
+permalink: /blog_fr/littérature/
 date:   2017-11-28
 nav: nosideblog
 ref: litteraturewelcome

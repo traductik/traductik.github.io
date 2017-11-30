@@ -1,14 +1,14 @@
 ---
 layout: post
-title:  "Mon premier article sur les atouts"
+title:  "My first assets post"
 ref: whereto
-permalink: /blog_fr/atouts/mon-premier-article-sur-les-atouts/
-breadcrumb: Agence
+permalink: /blog_en/assets/my-first-assets-post/
 date:   2017-11-18 18:43:44 +0100
-lang: fr
+lang: en
 ---
-# Jusqu'où irez-vous ?
-## Des clients en Europe&hellip;<br>&hellip; ou dans le monde entier&nbsp;? C'est possible&nbsp;!
+
+# How far will you get?
+## Customers in Europe&hellip;<br>&hellip; or all around the world? Yes, you can!
 
 Vos produits et services plaisent et se vendent bien, mais... en France surtout, ou en France seulement. Comment faire mieux ? Très simplement...
 

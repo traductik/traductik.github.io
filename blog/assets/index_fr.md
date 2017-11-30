@@ -2,7 +2,7 @@
 layout: page
 title:  "Atouts de Traduc'tik"
 breadcrumb: "Atouts de Traduc'tik"
-permalink: /blog/assets_fr/
+permalink: /blog_fr/atouts/
 date:   2017-11-28
 nav: nosideblog
 ref: assetswelcome

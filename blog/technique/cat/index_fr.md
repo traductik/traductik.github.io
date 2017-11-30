@@ -2,7 +2,7 @@
 layout: page
 title:  "Articles & actualités sur la TAO"
 breadcrumb: "Articles & actualités sur la TAO"
-permalink: /blog/technique/cat_fr/
+permalink: /blog_fr/technique/tao/
 date:   2017-11-28
 nav: nosideblog
 ref: taowelcome

@@ -1,0 +1,35 @@
+ <!----------------- Début de breadcrumb_post2 ------------------->
+ 
+<div style="margin-top: 1em;">
+    <ol class="breadcrumb">
+
+<!----------------- D'abord un lien vers l'accueil du site ------------------->
+
+<li>
+	<a href="/accueil_{{ page.lang }}">{{ site.index-name.[page.lang] }}</a>
+</li>
+
+<!----------------- Ensuite on découpe le permalink en morceaux ------------------->
+{% assign pathParts = page.permalink | split: "/" %}
+{% if page.layout contains "post" %}
+{% assign length = pathParts.size | minus: 2 %}
+{% else %}
+{% assign length = pathParts.size | minus: 1 %}
+{% endif %}
+{% assign path = "" %}
+<!----------------- Pour chaque morceau, une entrée de liste ------------------->
+<li>
+{% for c in (1..length) %}
+    {% capture path %}{{ path }}/{{pathParts[c]}}{% endcapture %}
+  <a href="{{ site.url }}{{ path }}">{{ path | split: "/" | last | prepend: "&nbsp;|&nbsp;" }}</a>
+{% endfor %}
+</li>
+
+ <!----------------- Si c'est un article avec contenu, on affiche son titre en gris, sinon rien ------------------->
+{% if page.layout contains "post" %}
+
+<li class="active">
+                    <a href="{{ page.permalink }}">{{ page.title }} </a>
+                </li>
+{% endif %}
+ <!----------------- Fin de breadcrumb_post2 ------------------->

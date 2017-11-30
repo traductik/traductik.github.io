@@ -2,7 +2,7 @@
 layout: page
 title:  "Assets of Traduc'tik"
 breadcrumb: "Assets of Traduc'tik"
-permalink: /blog/assets_en/
+permalink: /blog_en/assets/
 date:   2017-11-28
 nav: nosideblog
 ref: assetswelcome

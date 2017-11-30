@@ -2,7 +2,7 @@
 layout: page
 title:  "Translation News & Articles"
 breadcrumb: "Translation News & Articles"
-permalink: /blog/technique/translation_en/
+permalink: /blog_en/technique/translation/
 date:   2017-11-28
 nav: nosideblog
 ref: traductionwelcome

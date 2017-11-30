@@ -2,7 +2,7 @@
 layout: page
 title:  "Articles & actualités informatiques"
 breadcrumb: "Articles & actualités informatiques"
-permalink: /blog/technique/computing_fr/
+permalink: /blog_fr/technique/informatique/
 date:   2017-11-28
 nav: nosideblog
 ref: informatiquewelcome

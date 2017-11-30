@@ -2,7 +2,7 @@
 layout: page
 title:  "Actualités générales"
 breadcrumb: "Actualités générales"
-permalink: /blog/news_fr/
+permalink: /blog_fr/news/
 date:   2017-11-28
 nav: nosideblog
 ref: actualiteswelcome

@@ -2,7 +2,7 @@
 layout: page
 title:  "CAT News & Articles"
 breadcrumb: "CAT News & Articles"
-permalink: /blog/technique/cat_en/
+permalink: /blog_en/technique/cat/
 date:   2017-11-28
 nav: nosideblog
 ref: taowelcome

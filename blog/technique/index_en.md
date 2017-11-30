@@ -2,7 +2,7 @@
 layout: page
 title:  "Technical Articles"
 breadcrumb: "Technical Articles"
-permalink: /blog/technique_en/
+permalink: /blog_en/technique/
 date:   2017-11-28
 nav: nosideblog
 ref: techniquewelcome
