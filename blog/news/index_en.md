@@ -3,7 +3,7 @@ layout: page
 title:  "General News"
 breadcrumb: "General News"
 permalink: /blog_en/news/
-date:   2017-11-28
+date: 2017-11-28
 nav: nosideblog
 ref: actualiteswelcome
 lang: en

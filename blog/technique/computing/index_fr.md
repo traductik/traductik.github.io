@@ -3,7 +3,7 @@ layout: page
 title:  "Articles & actualités informatiques"
 breadcrumb: "Articles & actualités informatiques"
 permalink: /blog_fr/technique/informatique/
-date:   2017-11-28
+date: 2017-11-28
 nav: nosideblog
 ref: informatiquewelcome
 lang: fr

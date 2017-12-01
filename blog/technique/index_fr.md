@@ -3,7 +3,7 @@ layout: page
 title:  "Articles techniques"
 breadcrumb: "Articles techniques"
 permalink: /blog_fr/technique/
-date:   2017-11-28
+date: 2017-11-28
 nav: nosideblog
 ref: techniquewelcome
 lang: fr

@@ -3,7 +3,7 @@ layout: page
 title:  "Assets of Traduc'tik"
 breadcrumb: "Assets of Traduc'tik"
 permalink: /blog_en/assets/
-date:   2017-11-28
+date: 2017-11-28
 nav: nosideblog
 ref: assetswelcome
 lang: en

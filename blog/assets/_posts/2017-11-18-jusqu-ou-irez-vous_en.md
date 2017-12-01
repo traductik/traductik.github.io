@@ -5,6 +5,7 @@ ref: whereto
 permalink: /blog_en/assets/my-first-assets-post/
 date:   2017-11-18 18:43:44 +0100
 lang: en
+tags: ["Traduc'tik", "new customers", "Europe", "World", "expansion"]
 ---
 
 # How far will you get?

@@ -3,7 +3,7 @@ layout: page
 title:  "Articles & actualités de la traduction"
 breadcrumb: "Articles & actualités de la traduction"
 permalink: /blog_fr/technique/traduction/
-date:   2017-11-28
+date: 2017-11-28
 nav: nosideblog
 ref: traductionwelcome
 lang: fr

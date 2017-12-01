@@ -3,7 +3,7 @@ layout: page
 title:  "Atouts de Traduc'tik"
 breadcrumb: "Atouts de Traduc'tik"
 permalink: /blog_fr/atouts/
-date:   2017-11-28
+date: 2017-11-28
 nav: nosideblog
 ref: assetswelcome
 lang: fr

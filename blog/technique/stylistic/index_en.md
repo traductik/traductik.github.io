@@ -3,7 +3,7 @@ layout: page
 title:  "Stylistic News & Articles"
 breadcrumb: "Stylistic News & Articles"
 permalink: /blog_en/technique/stylistic/
-date:   2017-11-28
+date: 2017-11-28
 nav: nosideblog
 ref: stylistiquewelcome
 lang: en

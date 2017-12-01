@@ -3,7 +3,7 @@ layout: page
 title:  "Articles & actualités littéraires"
 breadcrumb: "Articles & actualités littéraires"
 permalink: /blog_fr/littérature/
-date:   2017-11-28
+date: 2017-11-28
 nav: nosideblog
 ref: litteraturewelcome
 lang: fr

@@ -3,7 +3,7 @@ layout: page
 title:  "Computing News & Articles"
 breadcrumb: "Computing News & Articles"
 permalink: /blog_en/technique/computing/
-date:   2017-11-28
+date: 2017-11-28
 nav: nosideblog
 ref: informatiquewelcome
 lang: en
