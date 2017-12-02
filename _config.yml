@@ -20,9 +20,10 @@ languages-localized:
 
 email: traductik@traductik.fr
 
-logo:
-  en: img/logos/logo-traductik_EN.svg
-  fr: img/logos/logo-traductik_FR.svg
+
+logo: img/logos/logo-traductik_sans-baseline.svg
+
+
   
 description:
   en: Your partner for translating, interpreting, editing, subtitling, voice-over...
@@ -37,8 +38,8 @@ index-name:
   fr: Accueil
   
 feed:
-  en: /en_feed.xml
-  fr: /fr_feed.xml  
+  en: feeds/en_feed.xml
+  fr: feeds/fr_feed.xml  
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "01traduction.fr/" # the base hostname & protocol for your site
@@ -58,10 +59,10 @@ collections:
     fr: services
     permalink: /services/:path/
  
-
 #Plugins
 plugins:
   - github-pages
+  - jekyll-seo-tag
 
 # Build settings
 markdown: kramdown
