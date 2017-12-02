@@ -5,7 +5,6 @@ permalink: /blog_en/technique/computing/my-first-computing-post/
 ref: jekupdate
 date:   2016-02-29 09:48:44 +0100
 lang: en
-tags: ["jekyll", "CMS", "website", "content management"]
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 

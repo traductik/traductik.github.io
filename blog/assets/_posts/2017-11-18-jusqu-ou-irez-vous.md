@@ -6,7 +6,6 @@ permalink: /blog_fr/atouts/mon-premier-article-sur-les-atouts/
 breadcrumb: Agence
 date: 2017-11-18 18:43:44 +0100
 lang: fr
-tags: ["Traduc'tik", "nouveaux clients", "Europe", "monde", "expansion"]
 ---
 # Jusqu'où irez-vous ?
 ## Des clients en Europe&hellip;<br>&hellip; ou dans le monde entier&nbsp;? C'est possible&nbsp;!

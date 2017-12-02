@@ -6,7 +6,6 @@ permalink: /blog_en/literature/my-first-literature-post/
 date: 2017-11-18 18:43:44 +0100
 categories: litterature
 lang: en
-tags: ["literature", "author", "short stories", "discovery"]
 ---
 
 ## An unknown genious!

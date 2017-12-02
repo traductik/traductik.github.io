@@ -233,6 +233,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   github-pages-health-check
+  jekyll-paginate
   jekyll-seo-tag
   jekyll-sitemap
   jekyll-theme-cayman

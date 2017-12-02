@@ -61,10 +61,7 @@ collections:
 
 #Plugins
 plugins:
-  - jekyll-seo-tag
-  - jekyll-sitemap
   - github-pages
-  - github-pages-health-check
 
 # Build settings
 markdown: kramdown
