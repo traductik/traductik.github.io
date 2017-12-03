@@ -15,7 +15,7 @@
    {% assign languages=site.welcome | where:"ref", page.ref | sort: 'lang' %}
    
    
-  {% assign language=languages | where:"lang" , page.lang %}
+  {% assign language=languages | where:"lang", page.lang %}
    
    {% if language!=languages %}
    <span> &nbsp;{{ site.languages-localized[page.lang] }}&nbsp;&#9661;</span>
@@ -23,15 +23,12 @@
    {% else %}
    
    <div class="tooltip"> Oups...
-   <span class="tooltiptext">Only in {{ site.languages[page.lang] }}, sorry !</span>
+   <span class="tooltiptext">Only in {{ site.languages[page.lang] }}, sorry!</span>
 </div>
     
    {% endif %}
 
-	
-	
-	
-	
+
 	<div class="dropdown-content">
          <!----------------- Niveau 2 (nested) ------------------->
          <!----------------- Entrées de sous-menu ------------------->

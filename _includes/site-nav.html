@@ -1,4 +1,4 @@
-
+<html>
 
 
 
@@ -27,12 +27,7 @@
 			
 			{% if site.[my_page.ref] %}
 			
-   <span 
-   
-   
-   
-   
-   {% if page.categories contains my_page.ref %}class="active-link" {% else %} class="page-link" {% endif %}  >
+   <span {% if page.categories contains my_page.ref %} class="active-link" {% else %} class="page-link" {% endif %}>
 	   
 	   &nbsp;&#9661;
 	   
@@ -67,8 +62,7 @@
  
  {% include selectors/language-selector-{{ page.categories }}.html %}
   
-  
-  {% else %}
+ {% else %}
    
     {% include selectors/language-selector-{{ page.layout }}.html %}
 
@@ -81,8 +75,7 @@
     </ul><!----------------- Fin du niveau 1 ------------------->
     </div><!----------------- Fin de trigger dans nav ------------------->
     
-
-    
+   
     </nav>
 
- 
+ </html>

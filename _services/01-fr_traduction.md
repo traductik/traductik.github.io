@@ -6,7 +6,7 @@ ref: traduction
 permalink: /services_fr/traduction/
 breadcrumb: Traduction
 date:  2017-11-13 10:00:00 +0100
-categories: services
+category: services
 lang: fr
 ---
   
