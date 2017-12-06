@@ -36,7 +36,7 @@
 {% if post.tags contains tag.name and post.title!=page.title %}
  <li class="post-title">
 	 
-	 <button  class="post-link" onclick="window.location.href='/{{ site.baseurl }}{{ post.permalink }}'">{{ post.title }}
+	 <button  class="post-link" onclick="window.location.href='{{ site.url }}{{ site.baseurl }}{{ post.permalink }}'">{{ post.title }}
 </button></li>
   {% endif %}  {% endfor %}        
 
