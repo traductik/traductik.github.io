@@ -14,7 +14,9 @@
 
 <!---------Ensuite création de la liste à partir de la variable sortedtags ci-dessus---------->
 
-<h1>Site tags by language</h1>
+<!----------Traduction du titre des tags depuis site.data.traductions------------->
+{% assign site-tags_title = site.data.traductions[page.lang] %}
+<h3>{{ site-tags_title.site-tags }}</h3>
 <!------D'abord la liste de tous les tags récoltés----->
 <ul class="toc-tags">
     {% for tag in sortedtags %}

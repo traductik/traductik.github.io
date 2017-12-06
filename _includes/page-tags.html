@@ -13,7 +13,9 @@
 {% endfor %}
 {% assign sortedtags = tags_lang | sort | group_by_exp:"item", "item" %}
 
-<h1>Page tags</h1>
+<!----------Traduction du titre des tags depuis site.data.traductions------------->
+{% assign article-tags_title = site.data.traductions[page.lang] %}
+<h3>{{ article-tags_title.page-tags }}</h3>
 <!---------Premier niveau : les tags collectés dans la page courante seulement---------->
 <ul class="toc-tags">
     {% assign this_post_tags=sortedtags | where:"lang", page.lang %}
