@@ -1,0 +1,78 @@
+<!-------------------------------PAGE-TAGS -------------->
+
+<!---Source : http://mentum.ru/jekyll/jekyll-filter-posts-by-tags-with-lang_en.html--->
+
+{% assign tags_lang  = "" | split:"" %}
+{% for tag in site.tags %}
+    {% assign tag_posts = tag[1] | where:"lang", page.lang %}
+    {% for post in tag_posts %}
+        {% assign tags_lang = tags_lang | push:tag[0] %}
+    {% endfor %}
+{% endfor %}
+{% assign sortedtags = tags_lang | sort | group_by_exp:"item", "item" %}
+
+<h1>Page tags</h1>
+<ul class="toc-tags">
+    {% assign this_post_tags=sortedtags | where:"lang", page.lang %}
+    
+    {% for tag in sortedtags %}
+ {% if page.tags contains tag.name %}
+   
+    
+    <li>
+        {{ tag.name }} ({{ tag.size }})
+     <ul> 
+ {% assign tag_posts=site.posts | where:"lang", page.lang %}
+        
+{% for post in tag_posts %}
+{% if post.tags contains tag.name and post.title!=page.title %}
+ <li> 
+
+
+    <a class="tag-title" href="{{ site.url }}/{{ post.permalink }}">{{ post.title }}</a>
+</li>
+  {% endif %}  {% endfor %}        
+</ul>   
+      
+      </li>
+   {% endif %} {% endfor %} 
+</ul>
+
+
+<!------------------------------SITE-TAGS ----------------->
+
+
+<!---Source : http://mentum.ru/jekyll/jekyll-filter-posts-by-tags-with-lang_en.html--->
+
+{% assign tags_lang  = "" | split:"" %}
+{% for tag in site.tags %}
+    {% assign tag_posts = tag[1] | where:"lang", page.lang %}
+    {% for post in tag_posts %}
+        {% assign tags_lang = tags_lang | push:tag[0] %}
+    {% endfor %}
+{% endfor %}
+{% assign sortedtags = tags_lang | sort | group_by_exp:"item", "item" %}
+
+
+
+<h1>Site tags by language</h1>
+<ul class="toc-tags">
+    {% for tag in sortedtags %}
+    <li>
+        {{ tag.name }} ({{ tag.size }})
+ <ul> 
+ {% assign tag_posts=site.posts | where:"lang", page.lang %}
+        
+{% for post in tag_posts %}
+{% if post.tags contains tag.name %}
+ <li> 
+
+
+    <a class="tag-title" href="{{ site.url }}/{{ post.permalink }}">{{ post.title }}</a>
+</li>
+  {% endif %}  {% endfor %}        
+</ul>  
+
+     </li>
+    {% endfor %}
+</ul>

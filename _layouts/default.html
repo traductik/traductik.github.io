@@ -5,8 +5,6 @@
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-
-
   {% include head.html %}
 
   <body>
@@ -19,11 +17,12 @@
     </div>
     {% endunless %}
     <div class="page-content">
+
       <div class="wrapper">
         {{ content }}
       </div>
     </div>
-
+    		<script src="{{ site.url }}{{ site.baseurl }}/js/tags.js"></script>
     {% include footer.html %}
 
   </body>

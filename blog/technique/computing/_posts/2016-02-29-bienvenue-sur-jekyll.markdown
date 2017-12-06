@@ -4,6 +4,8 @@ title:  "Mon premier post informatique !"
 permalink: /blog_fr/technique/informatique/mom-premier-post-informatique/
 ref: jekupdate
 date:   2016-02-29 09:48:44 +0100
+category: informatique
+tags: ["jekyll", "CMS", "site Web", "gestion de contenus", "Monde"]
 lang: fr
 ---
 Cet article se situe dans le dossier `_posts`. Allez l'éditer, et générez votre site à nouveau pour voir les modifications. Vous pouvez générer le site de différentes façons, mais le plus efficace est de lancer la commande `jekyll serve`, qui crée un serveur web et génère automatiquement votre site à chaque fois qu'un fichier est modifié.

@@ -1,0 +1,69 @@
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 12px;
+    border: none;
+    margin: 0.5em;
+    text-align: center;
+    outline: none;
+    font-size: 0.85em;
+    transition: 0.4s;
+}
+
+button.accordion-no-other {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 12px;
+    min-width: 50%;
+    border: none;
+    margin: 0.5em;
+    text-align: center;
+    outline: none;
+    font-size: 0.85em;
+    transition: 0.4s;
+}
+
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ccc;
+}
+
+button.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 0.5em;    
+}
+
+button.accordion.active:after {
+    content: "\2212";
+}
+
+ul.toc-tags {
+    list-style-type: none;
+    overflow: hidden;    
+}
+
+li.tag-title {
+    float: left;
+    overflow: visible;
+
+}
+
+ul.post-list {
+    list-style-type: none;
+    overflow: visible; 
+}
+
+button.post-link {
+	color: green;
+	font-size: 0.35em;
+}
+
+button.post-link:hover {
+	color: blue;
+	font-size: 0.35em;
+}
