@@ -1,4 +1,16 @@
 
+<style>
+
+li.catentries {
+	list-style-type: none;
+}
+
+
+button.toggleArticles {
+	margin: 10px;
+	border-radius: 50%;
+}
+</style>
 
 
 <ul class="catlist">
@@ -11,7 +23,7 @@
    {% else %}
     {% for tag in tags_list %}
     {% assign target_file=tag[0] %}
-      <li class="catentries"><button class="toggleArticles"> + </button><a href="{{ tag[0] | replace: tag[0], site.data.permalinks[page.lang][target_file] }}">{{ tag[0]| replace: tag[0], site.data.traductions[page.lang][target_file] }} </a><span class="post-count">{% assign tag_lang = tag[1] | where:"lang", page.lang %} ({{ tag_lang.size }}) </span>
+      <li class="catentries"><button class="toggleArticles">+</button><a href="{{ tag[0] | replace: tag[0], site.data.permalinks[page.lang][target_file] }}">{{ tag[0]| replace: tag[0], site.data.traductions[page.lang][target_file] }} </a><span class="post-count">{% assign tag_lang = tag[1] | where:"lang", page.lang %} ({{ tag_lang.size }})</span>
           
       
        <ul class="postlist">
@@ -19,7 +31,7 @@
    
     {% for cat_post in cat_posts %}
     {% if cat_post.categories contains target_file %}
-      <li>
+      <li style="margin-left:2em;">
         <span class="postmeta">{{ cat_post.date | date: "%b %-d, %Y" }}</span>
 
         <h2>
@@ -36,10 +48,6 @@
 {% assign tags_list = nil %}
 
 </ul>
-
-
-
-
 
 
 <script>
