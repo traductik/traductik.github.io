@@ -1,0 +1,19 @@
+
+fr:
+  blog: /blog_fr/
+  computing: /blog_fr/technique/informatique
+  assets: /blog_fr/atouts
+  computer-aided-translation: /blog_fr/technique/traduction-assistée-par-ordinateur
+  literature: /blog_fr/littérature
+  news: /blog_fr/actualités
+  stylistic: /blog_fr/technique/stylistique
+  translation: /blog_fr/technique/traduction
+en:
+  blog: /blog_en/
+  computing: technique/computing
+  assets: assets
+  computer-aided-translation: technique/computer-aided-translation/
+  literature: literature
+  news: news
+  stylistic: technique/stylistic
+  translation: technique/translation

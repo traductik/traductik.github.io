@@ -46,8 +46,7 @@ url: "01traduction.fr/" # the base hostname & protocol for your site
 twitter_username: traductik
 github_username:  traductik
 
-permalink: /blog_fr/:title/
-permalink: /blog_en/:title/
+permalink: pretty
 
 
 #Collections

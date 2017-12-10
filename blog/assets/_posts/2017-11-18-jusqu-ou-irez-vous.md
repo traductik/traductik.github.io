@@ -5,7 +5,7 @@ ref: whereto
 permalink: /blog_fr/atouts/mon-premier-article-sur-les-atouts/
 breadcrumb: Agence
 date: 2017-11-18 18:43:44 +0100
-catégorie: atouts
+category: assets
 tags: ["Traduc'tik", "nouveaux clients", "Europe", "Monde", "expansion"]
 lang: fr
 ---

@@ -4,7 +4,7 @@ title:  "Mon premier post informatique !"
 permalink: /blog_fr/technique/informatique/mom-premier-post-informatique/
 ref: jekupdate
 date:   2016-02-29 09:48:44 +0100
-category: informatique
+category: computing
 tags: ["jekyll", "CMS", "site Web", "gestion de contenus", "Monde"]
 lang: fr
 ---

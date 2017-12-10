@@ -2,6 +2,22 @@
 fr:
   page-tags: Mots-clés de l'article
   site-tags: Mots-clés du site
+  blog: Tous les articles du blog en français
+  computing: Actualités et astuces informatiques
+  assets: Atouts de Traduc'tik à votre service
+  computer-aided-translation: Traduction asssistée par ordinateur
+  literature: Littérature et traduction
+  news: Actualités de la traduction et de la rédaction
+  stylistic: Questions de style
+  translation: Questions de traduction
 en:
   page-tags: Article keywords
   site-tags: Site keywords
+  blog: All articles of the blog in English
+  computing: Computing news and howtos
+  assets: Traduc'tik's assets at your service
+  computer-aided-translation: Computer-aided translation
+  literature: Literature and translation
+  news: General news about translation and editing
+  stylistic: Stylistic topics
+  translation: Translation topics
