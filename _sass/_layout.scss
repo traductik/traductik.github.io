@@ -351,7 +351,12 @@ li.dropdown {
     position: relative;
     display: inline-block;
     line-height: 0.9em;
+    
+}
+
+.tooltip-border {
     border-bottom: 2px dotted black;
+
 }
 
 .tooltip .tooltiptext {
@@ -380,7 +385,7 @@ li.dropdown {
     margin-left: -10px;
     border-width: 5px;
     border-style: solid;
-    border-color: transparent transparent #555 transparent;;
+    border-color: transparent transparent #555 transparent;
 }
 
 .tooltip:hover .tooltiptext {
