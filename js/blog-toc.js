@@ -6,11 +6,35 @@ $('.catentries').click(function() {
 });
 
 
+
 $("#shake-em-all").click(function() {
-    $('.catlist ul').slideToggle();
+// jQuery selector to get an element
+var query = $('.catlist ul');
+ 
+// check if element is Visible
+var isVisible = query.is(':visible');
+ 
+if (isVisible === true) {
+   // element is Visible
+    $('.catlist ul').hide();
+} else {
+  // element is Hidden
+   $('.catlist ul').show();
+}
 });
 
 $("#shake-em-all2").click(function() {
-    $('.catlist ul').slideToggle();
+// jQuery selector to get an element
+var query = $('.catlist ul');
+ 
+// check if element is Visible
+var isVisible = query.is(':visible');
+ 
+if (isVisible === true) {
+   // element is Visible
+    $('.catlist ul').hide();
+} else {
+  // element is Hidden
+   $('.catlist ul').show();
+}
 });
-

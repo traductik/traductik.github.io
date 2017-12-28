@@ -1,28 +1,34 @@
-{% include date.html date=page.date %}
 
+<!------------D'abord la conversion des dates en français----------------------------->
+{% include date.html date=page.date %}
 <div class="wrapper" style="margin-bottom: 1em;">
+<!-----------------Le conteneur pour l'ensemble------------------------>
+<div class="wrapper" style="margin-bottom: 1em;">
+
+<!---------Une icône font-awesome et un tooltip pour faire déplier la liste par l'internaute------------------------->
 <i class="far fa-hand-point-right"></i>
 <div class="tooltip">
 	<span class="tooltiptext">{{ site.data.traductions[page.lang]tooltip-1 }}</span><button class="all-o-em" id="shake-em-all">++...</button>
+<!--------------------L'ID du bouton correspond au script Jquery (ferme ou ouvre toutes les catégories)------------------------->
 </div>
 
 </div>
 
-
-<ul class="catlist">
+<ul class="catlist"><!------ Liste de toutes les catégories----->
 {% assign tags_list = site.categories %}
   {% if tags_list.first[0] == null %}
     {% for tag in tags_list  %}
+    {% assign target_file=tag %}
  <a href="{{ tag | replace: tag, site.data.permalinks[page.lang][target_file] }}">{{ tag | replace: tag, site.data.traductions[page.lang][target_file] }}</a> <span class="post-count">{% assign tag_lang = tag | where:"lang", page.lang %} ({{ tag_lang.size }}) </span>
     {% endfor %}
   
    {% else %}
     {% for tag in tags_list %}
-    {% assign target_file=tag[0] %}
+    {% assign target_file=tag[0] %}<!------ En mettant tag[0] à la fin de site.data etc., ça ne marchait pas... le but est d'afficher une description plus détaillée de la catégorie----->
       <li class="catentries"><div class="tooltip"><span class="tooltiptext">{{ site.data.traductions[page.lang]tooltip-2 }}</span><button class="toggleArticles">+</button></div><a href="{{ tag[0] | replace: tag[0], site.data.permalinks[page.lang][target_file] }}">{{ tag[0]| replace: tag[0], site.data.traductions[page.lang][target_file] }}</a><span class="post-count">{% assign tag_lang = tag[1] | where:"lang", page.lang %} ({{ tag_lang.size }})</span>
           
       
-       <ul class="postlist">
+       <ul class="postlist"><!------ Liste des articles dans chaque catégorie ----->
     {% assign cat_posts=site.posts | where:"lang", page.lang  %}
    
     {% for cat_post in cat_posts %}
@@ -47,12 +53,13 @@
 
 <div class="wrapper" style="margin-t: 1em;">
 <i class="far fa-hand-point-right"></i>
+
 <div class="tooltip">
-	<span class="tooltiptext">{{ site.data.traductions[page.lang]tooltip-1 }}</span><button class="all-o-em" id="shake-em-all2">++...</button>
+<span class="tooltiptext">{{ site.data.traductions[page.lang]tooltip-1 }}</span><button class="all-o-em" id="shake-em-all2">++...</button>
 </div>
 
 </div>
-
+</div>
 
 
 
