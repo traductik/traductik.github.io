@@ -13,6 +13,8 @@ fr:
   tooltip-1: Cliquer pour ouvrir/fermer toutes les catégories
   tooltip-2: Cliquer pour voir/masquer tous les articles de la catégorie
   close: Fermer
+  welcome-header1: <i>Votre</i> agence depuis 1992
+  welcome-header2: Fidèle à vos messages
 en:
   page-tags: Article keywords
   site-tags: Site keywords
@@ -26,4 +28,6 @@ en:
   translation: Translation topics
   tooltip-1: Click to open/close all categories
   tooltip-2: Click to see/hide all posts in category
-  close: Close
+  close: Close  
+  welcome-header1: <i>Your</i> agency since 1992
+  welcome-header2: True to your words
