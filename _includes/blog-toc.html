@@ -24,7 +24,7 @@
   
    {% else %}
     {% for tag in tags_list %}
-    {% assign target_file=tag[0] %}<!------ En mettant tag[0] à la fin de site.data etc., ça ne marchait pas... le but est d'afficher une description plus détaillée de la catégorie----->
+    {% assign target_file=tag[0] %}<!------ En mettant juste tag[0] à la fin de site.data etc., ça ne marchait pas... le but est d'afficher une description plus détaillée de la catégorie----->
       <li class="catentries"><div class="tooltip"><span class="tooltiptext">{{ site.data.traductions[page.lang]tooltip-2 }}</span><button class="toggleArticles">+</button></div><a href="{{ tag[0] | replace: tag[0], site.data.permalinks[page.lang][target_file] }}">{{ tag[0]| replace: tag[0], site.data.traductions[page.lang][target_file] }}</a><span class="post-count">{% assign tag_lang = tag[1] | where:"lang", page.lang %} ({{ tag_lang.size }})</span>
           
       

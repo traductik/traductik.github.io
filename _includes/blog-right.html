@@ -1,15 +1,16 @@
 <!DOCTYPE html lang="{{ page.lang }}">
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
 <body>
 
 
 <!----------------- Appel de la barre liée à la feuille de style w3 ------------------->
 <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-right" style="width:300px;right:0;float:right" id="mySidebar">
-  <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">{{ site.data.traductions[page.lang]close }} &times;</button>
+  <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">{{ site.data.traductions[page.lang]close }} &times;</button> 
   <!----------------- Liste des articles de blog ------------------->
-  <div class="wrapper">
+
   <h1 class="page-heading">Articles</h1>
  <ul class="post-list">
     {% assign posts=site.posts | where:"lang", page.lang %}
@@ -28,15 +29,15 @@
 
 
 {% include site-tags.html %}
+ 
   
-  
-  </div>
+ 
   <!----------------- Fin de la liste des articles de blog ------------------->
 </div>
 
   <!----------------- Bouton du blog ------------------->
-<div class="w3-main" style="margin-right:200px">
-<div class="w3-teal">
+<div class="w3-main">
+<div class="w3-teal" style="margin-top:-4%">
   <button class="w3-button w3-light-grey w3-teal w3-xlarge w3-right w3-hide-large" onclick="w3_open()">Blog &#9776;</button>  
 </div>
 </div>
