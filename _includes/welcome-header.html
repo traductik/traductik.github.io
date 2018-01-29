@@ -1,7 +1,7 @@
 
 
 	<style>
-#example1 {
+#bandeau-accueil {
     padding: 0px;
     background: url(../img/fond-traductik-stylo.jpg);
     background-repeat: no-repeat;
@@ -10,22 +10,49 @@
     height: 35em;
     width:100%;
 }
+ul.bandeau {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
 
-#example2 {
-    border: 2px solid black;
-    padding: 25px;
-    background: url(../img/fond-traductik-stylo.jpg);
-    background-repeat: no-repeat;
-    background-size: 1200px 700px;
+li.bandeauli {
+    float: left;
+    margin-left: 1em;
+}
+
+li.bandeauli a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li.bandeauli a:hover {
+    background-color: #111111;
+}
+
+li.bandeauli:before {
+    content: "\2713 ";
+    font-size: 1.25em;
+    display: block;
+    float: left;
+    width: 0.85em;
+    color: #dd840d;
 }
 </style>
-	
-	
-
-	
-	
-	
-	 <div id="example1" style="text-align:center;margin-top:5px">
+<div class="wrapper" style="margin-top:5%; margin-bottom:5%; margin-right:1em; margin-left:20%;font-size:0.97em;color:#42673e;;">
+<ul class="bandeau">
+	<li class="bandeauli">{{ site.data.traductions[page.lang]translation-title }}</li>
+	<li class="bandeauli">{{ site.data.traductions[page.lang]editing-title }}</li>
+	<li class="bandeauli">{{ site.data.traductions[page.lang]interpreting-title }}</li>
+	<li class="bandeauli">{{ site.data.traductions[page.lang]voice-over-title }}</li>
+	<li class="bandeauli">{{ site.data.traductions[page.lang]subtitling-title }}</li>
+</ul>
+</div>
+	 <div id="bandeau-accueil" style="text-align:center;margin-top:5px">
 		 <div style="position:relative;margin-left: 43%;margin-right:43%;margin-top:0%;margin-bottom:1%;padding:0%;"><img src="../img/overlay-bandeau.svg"></img></div>
       <div style="color:#f8cd2a;margin-top:1%;"><i class="fa fa-spinner fa-spin fa-3x fa-fw"></i><br><br><strong>{{ site.data.traductions[page.lang]welcome-header1 }}</strong></div>
       <div style="color: white;margin-top:3em;font-size: 3em;"><em>{{ site.data.traductions[page.lang]welcome-header2 }}</em></div>

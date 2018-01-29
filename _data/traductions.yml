@@ -1,5 +1,10 @@
 
 fr:
+  translation-title: Traduction
+  editing-title: Rédaction
+  interpreting-title: Interprétation
+  voice-over-title: Voix-off
+  subtitling-title: Sous-titrage
   page-tags: Mots-clés de l'article
   site-tags: Mots-clés du site
   blog: Tous les articles du blog en français
@@ -16,6 +21,11 @@ fr:
   welcome-header1: <i>Votre</i> agence depuis 1992
   welcome-header2: Fidèle à vos messages
 en:
+  translation-title: Translation
+  editing-title: Editing
+  interpreting-title: Interpreting
+  voice-over-title: Voice-over
+  subtitling-title: Subtitling
   page-tags: Article keywords
   site-tags: Site keywords
   blog: All articles of the blog in English
