@@ -51,7 +51,7 @@
     }
 
     .page-link {
-        color: $text-color;
+        color: $green-traductik;
         line-height: $base-line-height;
 
         // Gaps between nav items, but not on the last one
@@ -59,6 +59,9 @@
             margin-right: 20px;
         }
     }
+    
+    
+    
      .active-link {
         color: $orange-traductik;
         line-height: $base-line-height;
@@ -95,6 +98,16 @@
     background-color: grey;
 }
 
+.dropdown a:hover {
+    background-color: white;
+    padding: 4px;
+    box-shadow:  3px 3px 4px 5px Gainsboro;
+    text-decoration: none;  
+    color: $orange-traductik;
+    
+    }
+
+
 li.dropdown {
     display: inline-block;
     padding: 0;
@@ -128,7 +141,6 @@ li.dropdown {
 
 
 
-
        /**
  * Media queries
  */
@@ -142,8 +154,7 @@ li.dropdown {
         border: 1px solid $grey-color-light;
         border-radius: 5px;
         text-align: right;
-        
-        
+           
 
 
         .menu-icon {

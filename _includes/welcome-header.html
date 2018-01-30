@@ -1,55 +1,20 @@
 
 
-	<style>
-#bandeau-accueil {
-    padding: 0px;
-    background: url(../img/fond-traductik-stylo.jpg);
-    background-repeat: no-repeat;
-    background-size: auto;
-    float:left;
-    height: 35em;
-    width:100%;
-}
-ul.bandeau {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
+<!-- Styles dans base.scss -->
 
-li.bandeauli {
-    float: left;
-    margin-left: 1em;
-}
 
-li.bandeauli a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
-}
-
-li.bandeauli a:hover {
-    background-color: #111111;
-}
-
-li.bandeauli:before {
-    content: "\2713 ";
-    font-size: 1.25em;
-    display: block;
-    float: left;
-    width: 0.85em;
-    color: #dd840d;
-}
-</style>
-<div class="wrapper" style="margin-top:5%; margin-bottom:5%; margin-right:1em; margin-left:20%;font-size:0.97em;color:#42673e;;">
+<div class="wrapper">
 <ul class="bandeau">
-	<li class="bandeauli">{{ site.data.traductions[page.lang]translation-title }}</li>
-	<li class="bandeauli">{{ site.data.traductions[page.lang]editing-title }}</li>
-	<li class="bandeauli">{{ site.data.traductions[page.lang]interpreting-title }}</li>
-	<li class="bandeauli">{{ site.data.traductions[page.lang]voice-over-title }}</li>
-	<li class="bandeauli">{{ site.data.traductions[page.lang]subtitling-title }}</li>
+	
+	{% assign serv_pages=site.services %}
+        {% assign frontpages=serv_pages | where:"lang", page.lang %}
+        {% for my_frontpage in frontpages %}
+          {% if my_frontpage.title %}	
+	
+	<li class="bandeauli"><a href="{{ my_frontpage.url | prepend: site.baseurl }}"><span style="font-size:1.3em;width: 0.95em;color: #dd840d;">&#x2713;</span>{{ my_frontpage.title }}</a></li>
+	
+   {% endif %}
+   {% endfor %}
 </ul>
 </div>
 	 <div id="bandeau-accueil" style="text-align:center;margin-top:5px">

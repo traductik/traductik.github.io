@@ -1,6 +1,7 @@
 <html>
 
 
+<!-- Styles dans layout.scss -->
 
  <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -45,7 +46,7 @@
        {% assign subpages=site.[my_page.ref] | where:"lang", page.lang %}   
         {% for my_subpage in subpages %}
       
-		  <a {% if  my_subpage.ref == page.ref %}class="active-link" {% else %}class="page-link" {% endif %} href="{{ my_subpage.url | prepend: site.baseurl }}">{{ my_subpage.title }}</a>
+		<a {% if  my_subpage.ref == page.ref %}class="active-link" {% else %}class="page-link" {% endif %} href="{{ my_subpage.url | prepend: site.baseurl }}">{{ my_subpage.title }}</a>
         
         {% endfor %}
              <!----------------- Fin des entrées de sous-menu -------------------> 
