@@ -13,8 +13,13 @@ fr:
   tooltip-1: Cliquer pour ouvrir/fermer toutes les catégories
   tooltip-2: Cliquer pour voir/masquer tous les articles de la catégorie
   close: Fermer
+  bandeau-top: Du lundi au samedi de 8h à 18h &mdash; devis gratuit en 1h
+  bandeau-top2: Tél. +33 (0)4 93 58 01 61 &mdash; Fax +33 (0)1 56 72 18 72
   welcome-header1: <i>Votre</i> agence depuis 1992
   welcome-header2: Fidèle à vos messages
+  clock-text: Du lundi au samedi de 8h à 18h &mdash; devis gratuit en 1h
+  phone-text: Tél. +33 (0)4 93 58 01 61 &mdash; Fax +33 (0)1 56 72 18 72
+  search-text: Rechercher sur le site de TRADUC'TIK&hellip;
 en:
   page-tags: Article keywords
   site-tags: Site keywords
@@ -28,6 +33,11 @@ en:
   translation: Translation topics
   tooltip-1: Click to open/close all categories
   tooltip-2: Click to see/hide all posts in category
-  close: Close  
+  close: Close
+  bandeau-top: Monday through Saturday, 8am to 6pm C.E.T. &mdash; free 1hr quote
+  bandeau-top2: Tel. +33 (0)4 93 58 01 61 &mdash; Fax +33 (0)1 56 72 18 72
   welcome-header1: <i>Your</i> agency since 1992
   welcome-header2: True to your words
+  clock-text: Monday through Saturday, 8am to 6pm C.E.T. &mdash; free 1hr quote
+  phone-text: Tel. +33 (0)4 93 58 01 61 &mdash; Fax +33 (0)1 56 72 18 72
+  search-text: Search TRADUC'TIK website&hellip;

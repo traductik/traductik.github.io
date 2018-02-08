@@ -20,8 +20,58 @@
  * Navigation haute
  */
 
+       /**
+ * Animation du logo
+ */
+
+img.logo {
+    position: relative;
+    width: 15em;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 2s;
+
+}
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    0%   {width: 30%;left:-500px; top:0px;transform: rotate(-360deg); }
+    25%  {width: 45%;left:80px; top:20px;}
+    50%  {width: 55%;left:72px; top:18px;}
+    60%  {width: 60%;left:64px; top:16px;}
+    65%  {width: 65%;left:56px; top:14px;}
+    70%  {width: 70%;left:48px; top:12px;}
+    75%  {width: 75%;left:40px; top:10px;}
+    80%  {width: 80%;left:32px; top:8px;}
+    85%  {width: 85%;left:24px; top: 6px;}
+    90%  {width: 90%;left:16px; top: 4px;}
+    95%  {width: 95%;left: 8px; top: 2px;}
+    100% {width:100%;left: 0px; top: 0px;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {width: 30%;left:-500px; top:0px;transform: rotate(-360deg); }
+    25%  {width: 45%;left:80px; top:20px;}
+    50%  {width: 55%;left:72px; top:18px;}
+    60%  {width: 60%;left:64px; top:16px;}
+    65%  {width: 65%;left:56px; top:14px;}
+    70%  {width: 70%;left:48px; top:12px;}
+    75%  {width: 75%;left:40px; top:10px;}
+    80%  {width: 80%;left:32px; top:8px;}
+    85%  {width: 85%;left:24px; top: 6px;}
+    90%  {width: 90%;left:16px; top: 4px;}
+    95%  {width: 95%;left: 8px; top: 2px;}
+    100% {width:100%;left: 0px; top: 0px;}
+}
+
+
+
+
 #logo-header {
-	margin-top:0.5em;
+	margin-top:1.5em;
 	max-width: 18em;
 	margin-bottom:0.25em;
 }
@@ -45,25 +95,50 @@
     float: right;
     line-height: 56px;
     font-size: 1em;
+    font-weight: 600;
 
     .menu-icon {
         display: none;
     }
 
     .page-link {
-        color: $green-traductik;
+        color: $orange-traductik;
         line-height: $base-line-height;
 
         // Gaps between nav items, but not on the last one
         &:not(:last-child) {
-            margin-right: 20px;
+            margin-right: 10px;
         }
-    }
-    
-    
-    
-     .active-link {
+}       
+    .details-link {
+        line-height: $base-line-height;
+
+        // Gaps between nav items, but not on the last one
+        &:not(:last-child) {
+            margin-right: 6px;
+        }
+}
+
+#clock, #phone, #search  {
+		border: none;
+        background: none;
+        padding: 0.35em;
+}
+     
+#clock:hover, #phone:hover, #search:hover {
         color: $orange-traductik;
+        transform: scale(1.25, 1.75);
+}
+
+
+.active-icon {
+        color: $orange-traductik;
+        transform: scale(1.35);
+        outline: none;
+}
+
+     .active-link {
+        color: $green-traductik;
         line-height: $base-line-height;
 
         // Gaps between nav items, but not on the last one
@@ -94,16 +169,13 @@
  * Menus déroulants
  */
 
-.dropdown:hover .dropbtn {
-    background-color: grey;
-}
 
 .dropdown a:hover {
-    background-color: white;
     padding: 4px;
     box-shadow:  3px 3px 4px 5px Gainsboro;
     text-decoration: none;  
-    color: $orange-traductik;
+    color: $green-traductik;
+     z-index: 80;
     
     }
 
@@ -112,6 +184,8 @@ li.dropdown {
     display: inline-block;
     padding: 0;
     margin: 0;
+     z-index: 80;
+    
 }
 
 .dropdown-content {
@@ -120,19 +194,22 @@ li.dropdown {
     background-color: #f9f9f9;
     min-width: 10%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 80;
 }
 
 .dropdown-content a {
-    padding: 12px 16px;
+    padding: 10px 14px;
     text-decoration: none;
+    color: $green-traductik;
     display: block;
     text-align: left;
+    z-index: 80;
 }
 
-.dropdown-content a:hover {
-	background-color: beige;
-}
 
+.dropdown-content a:hover { 
+    color: $orange-traductik;
+}
 
 
 .dropdown:hover .dropdown-content {

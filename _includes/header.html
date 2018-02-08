@@ -1,6 +1,73 @@
+
+<style>
+	
+.cartouche {
+	width: 450px;
+	height: 1.55em;
+	margin: 0.5% 40% 0% 40%;
+	line-height: 0.85em;
+	font-size: 0.85em;
+	text-align: center;
+	padding-top: 0.4em;
+	padding-bottom: 1.15em;
+	position: absolute;
+	top: 0px;
+
+
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+
+    -webkit-box-shadow: inset 0px 1px 1px  rgba(0, 0, 0, .5), 0px 1px 0px  rgba(250, 250, 250, .2);
+    box-shadow: inset 0px 1px 1px  rgba(0, 0, 0, .5), 0px 1px 0px  rgba(250, 250, 250, .2);
+
+	-webkit-transition: background-color 350ms;
+	-moz-transition: background-color 350ms;
+    transition: background-color 350ms;
+}
+
+
+.multimodal {
+	width: 100%;
+	height: 100%;
+	line-height: 120%;
+	font-size: 100%;
+	margin: -1em 0 0 0;
+	text-align: left;
+	float: left;
+	padding:0 0 0 0.5em;
+	top: 0px;
+	
+}
+
+
+p.autotext {
+	display: block;
+}
+
+.clock-text, .phone-text, .search-text {
+	display: none;
+}
+
+</style>
+
+<div class="cartouche">
+<div  id="autoplay">
+	<p class="autotext">{{ site.data.traductions[page.lang]bandeau-top }}</p>
+	<p class="autotext">{{ site.data.traductions[page.lang]bandeau-top2 }}</p>
+	<p class="autotext" style="color:$green-traductik;text-transform: capitalize;font-weight: 600;">Paris &mdash; Nice &mdash; International</p>
+</div>
+<div class="multimodal">
+<span class="clock-text">{{ site.data.traductions[page.lang]clock-text }}</span>
+<span class="phone-text">{{ site.data.traductions[page.lang]phone-text }}</span>
+<span class="search-text">{{ site.data.traductions[page.lang]search-text }}</span>
+</div>
+</div>
+
+<!-- Styles dans layout.scss -->
+
 <div id="header-wrapper"> <!----------------- Wrapper de l'en-tête ------------------->
 
-	
+
 <header id="site-header"> <!----------------- Site header MAIN ------------------->
 
 
@@ -16,10 +83,9 @@
 	
 	
 	
-		<div id="logo-header"  ><!----------------- Logo header div#2 à gauche ------------------->
+		<div id="logo-header"><!----------------- Logo header div#2 à gauche ------------------->
 {% assign logo_id = site.data.logos[page.lang] %}
-		<a href="{{ site.baseurl }}/{{ site.index[page.lang] }}"><img class="logo" src="{{ site.baseurl }}/{{ logo_id.url }}"></a>
-
+		<a href="{{ site.baseurl }}/{{ site.index[page.lang] }}"><img class="logo" id="logo-anim" src="{{ site.baseurl }}/{{ logo_id.url }}"></a>
 		</div><!----------------- Fin de logo header div#2 à gauche------------------->
 
 {% if page.layout contains "post" %}
@@ -34,11 +100,53 @@
 
 </header><!----------------- Fin de site header MAIN ------------------->
 
+ <!--------------Script pour les catégories de blog------------->
+<script src="/js/textition.js"></script>
 
+<script>
+	// autoplay
+	$('#autoplay').textition({
+		speed: 1,
+		animation: 'ease-out',
+		map: {
+			x: 200,
+			y: 100,
+			z: 0
+		},
+		autoplay: true,
+		interval: 5
+	})
+	
+</script>
+<script>
+	$("#clock").click(function(){
+    $("p.autotext, .search-text, .phone-text").hide();
+    $(".clock-text").show();
+    $("#phone, #search").removeClass("active-icon");
+    $("#clock").addClass("active-icon");
+    $("#clock")[0].selectedIndex = -1;
+});
+</script>
 
+<script>
+	$("#phone").click(function(){
+    $("p.autotext, .search-text, .clock-text").hide();
+    $(".phone-text").show();
+    $("#clock, #search").removeClass("active-icon");
+    $("#phone").addClass("active-icon");
+    $("#phone")[0].selectedIndex = -1;
+});
+</script>
 
-
-
+<script>
+	$("#search").click(function(){
+    $("p.autotext, .phone-text, .clock-text").hide();
+    $(".search-text").show();
+    $("#phone, #clock").removeClass("active-icon");
+    $("#search").addClass("active-icon");
+    $("#search")[0].selectedIndex = -1;
+});
+</script>
 
 
 </div>  <!----------------- Fin du wrapper de l'en-tête ------------------->

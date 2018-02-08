@@ -1,6 +1,5 @@
 <html>
 
-
 <!-- Styles dans layout.scss -->
 
  <nav class="site-nav">
@@ -58,6 +57,14 @@
        <!----------------- Fin des entrées de menu ------------------->
        
        </li>
+
+	<button id="clock"><i class="far fa-clock details-link"></i></button>
+
+	<button id="phone"><i class="fas fa-phone details-link"></i></button>
+
+	<button id="search"><i class="fas fa-search details-link"></i></button>
+	
+
    <span> <!----------------- Insertion du sélecteur de langue ------------------->
     {% if page.layout!="post" and page.categories %}
  
@@ -75,8 +82,8 @@
     
     </ul><!----------------- Fin du niveau 1 ------------------->
     </div><!----------------- Fin de trigger dans nav ------------------->
-    
-   
+  
     </nav>
-
+        
+    
  </html>
