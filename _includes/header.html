@@ -115,37 +115,67 @@ p.autotext {
 		},
 		autoplay: true,
 		interval: 5
-	})
-	
-</script>
-<script>
-	$("#clock").click(function(){
-    $("p.autotext, .search-text, .phone-text").hide();
-    $(".clock-text").show();
+});
+
+	// Affichage des horaires pendant 15 secondes
+	function Horaire() {
+    setTimeout(Horaire1, 0);
+    setTimeout(Horaire2, 15000);
+	}
+	function Horaire1() {
+    $("p.autotext, .search-text, .phone-text").hide(1000);
+    $(".clock-text").show(1000);
     $("#phone, #search").removeClass("active-icon");
     $("#clock").addClass("active-icon");
     $("#clock")[0].selectedIndex = -1;
-});
-</script>
+	}
+	function Horaire2() {
+    $(".search-text, .phone-text, .clock-text").hide();
+    $("#clock").removeClass("active-icon");
+    $("#clock").css("outline", "none");
+    $(".autotext").show();
+	}
 
-<script>
-	$("#phone").click(function(){
-    $("p.autotext, .search-text, .clock-text").hide();
-    $(".phone-text").show();
+	// Affichage des coordonnées téléphoniques pendant 15 secondes
+	function Phone() {
+    setTimeout(Phone1, 0);
+    setTimeout(Phone2, 15000);
+	}
+	function Phone1() {
+    $("p.autotext, .search-text, .clock-text").hide(1000);
+    $(".phone-text").show(1000);
     $("#clock, #search").removeClass("active-icon");
     $("#phone").addClass("active-icon");
     $("#phone")[0].selectedIndex = -1;
-});
-</script>
+	}
+	function Phone2() {
+    $(".search-text, .phone-text, .clock-text").hide();
+    $("#phone").removeClass("active-icon");
+    $("#phone").css("outline", "none");
+    $(".autotext").show();
+	}
 
-<script>
-	$("#search").click(function(){
-    $("p.autotext, .phone-text, .clock-text").hide();
-    $(".search-text").show();
-    $("#phone, #clock").removeClass("active-icon");
+
+	// Affichage de la recherche pendant 30 secondes
+
+	function Search() {
+    setTimeout(Search1, 0);
+    setTimeout(Search2, 30000);
+	}
+	function Search1() {
+    $("p.autotext, .phone-text, .clock-text").hide(1000);
+    $(".search-text").show(1000);
+    $("#clock, #phone").removeClass("active-icon");
     $("#search").addClass("active-icon");
     $("#search")[0].selectedIndex = -1;
-});
+	}
+	function Search2() {
+    $(".search-text, .phone-text, .clock-text").hide();
+    $("#search").removeClass("active-icon");
+    $("#search").css("outline", "none");
+    $(".autotext").show();
+	}
+
 </script>
 
 

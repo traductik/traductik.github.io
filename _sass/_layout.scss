@@ -112,6 +112,7 @@ img.logo {
 }       
     .details-link {
         line-height: $base-line-height;
+        outline: none;
 
         // Gaps between nav items, but not on the last one
         &:not(:last-child) {
