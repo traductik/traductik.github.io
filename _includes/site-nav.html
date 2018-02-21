@@ -27,10 +27,8 @@
 			
 			{% if site.[my_page.ref] %}
 			
-   <span {% if page.categories contains my_page.ref %} class="active-link" {% else %} class="page-link" {% endif %}>
-	   
-	   &nbsp;&#9661;
-	   
+   <span {% if page.categories contains my_page.ref %} class="active-link triangle" {% else %} class="page-link triangle" {% endif %}>
+	<!----------------- Petit triangle pointe en bas pour le sous-menu (layout.scss) ------------------->   
 	   </span>
    {% endif %}
   

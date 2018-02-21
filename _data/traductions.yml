@@ -10,6 +10,7 @@ fr:
   news: Actualités de la traduction et de la rédaction
   stylistic: Questions de style
   translation: Questions de traduction
+  tooltip-0: Page d'accueil
   tooltip-1: Cliquer pour ouvrir/fermer toutes les catégories
   tooltip-2: Cliquer pour voir/masquer tous les articles de la catégorie
   close: Fermer
@@ -31,6 +32,7 @@ en:
   news: General news about translation and editing
   stylistic: Stylistic topics
   translation: Translation topics
+  tooltip-0: Welcome page
   tooltip-1: Click to open/close all categories
   tooltip-2: Click to see/hide all posts in category
   close: Close

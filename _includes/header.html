@@ -1,54 +1,29 @@
 
+
 <style>
-	
-.cartouche {
-	width: 450px;
-	height: 1.55em;
-	margin: 0.5% 40% 0% 40%;
-	line-height: 0.85em;
-	font-size: 0.85em;
-	text-align: center;
-	padding-top: 0.4em;
-	padding-bottom: 1.15em;
-	position: absolute;
-	top: 0px;
 
+.tooltiptext2 {
+    visibility: hidden;
+    width: 8em;
+    font-size: 0.85em;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
 
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-
-    -webkit-box-shadow: inset 0px 1px 1px  rgba(0, 0, 0, .5), 0px 1px 0px  rgba(250, 250, 250, .2);
-    box-shadow: inset 0px 1px 1px  rgba(0, 0, 0, .5), 0px 1px 0px  rgba(250, 250, 250, .2);
-
-	-webkit-transition: background-color 350ms;
-	-moz-transition: background-color 350ms;
-    transition: background-color 350ms;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
 }
 
-
-.multimodal {
-	width: 100%;
-	height: 100%;
-	line-height: 120%;
-	font-size: 100%;
-	margin: -1em 0 0 0;
-	text-align: left;
-	float: left;
-	padding:0 0 0 0.5em;
-	top: 0px;
-	
-}
-
-
-p.autotext {
-	display: block;
-}
-
-.clock-text, .phone-text, .search-text {
-	display: none;
-}
 
 </style>
+
+
+
+
+<!-- Styles dans layout.scss -->
 
 <div class="cartouche">
 <div  id="autoplay">
@@ -84,8 +59,15 @@ p.autotext {
 	
 	
 		<div id="logo-header"><!----------------- Logo header div#2 à gauche ------------------->
+			<span class="tooltiptext2">{{ site.data.traductions[page.lang]tooltip-0 }}</span>
 {% assign logo_id = site.data.logos[page.lang] %}
-		<a href="{{ site.baseurl }}/{{ site.index[page.lang] }}"><img class="logo" id="logo-anim" src="{{ site.baseurl }}/{{ logo_id.url }}"></a>
+		<a class="logo-link" href="{{ site.baseurl }}/{{ site.index[page.lang] }}"><img class=
+		{% if page.ref contains "index" %}
+		"logo animated-logo"
+		{% else %}
+		"logo"
+		{% endif %}
+		src="{{ site.baseurl }}/{{ logo_id.url }}"></a>
 		</div><!----------------- Fin de logo header div#2 à gauche------------------->
 
 {% if page.layout contains "post" %}
