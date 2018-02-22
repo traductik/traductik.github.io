@@ -273,8 +273,7 @@ img.animated-logo {
     text-decoration: none;  
     color: $green-traductik;
      z-index: 80;
-    
-    }
+}
 
 
 li.dropdown {
@@ -282,7 +281,14 @@ li.dropdown {
     padding: 0;
     margin: 0;
      z-index: 80;
-    
+}
+
+#language-tag {
+	font-size: 0.9em;
+	&:after {
+	content: ' ▽';
+	}
+	
 }
 
 .dropdown-content {

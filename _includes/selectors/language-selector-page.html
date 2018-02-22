@@ -20,7 +20,7 @@
   {% assign language=languages | where:"lang", page.lang %}
    
    {% if language!=languages %}
-   <span> &nbsp;{{ site.languages-localized[page.lang] }}&nbsp;&#9661;</span>
+   <span id="language-tag"> &nbsp;{{ site.languages-localized[page.lang] }}</span>
 
    {% else %}
    
