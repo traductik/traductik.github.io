@@ -6,19 +6,17 @@ ref: index
 lang: fr
 ---
 
-
-
-  <div class="home">
-  
-
-<head>
 <style>
 .container {
      text-align: center;
      margin-bottom: 2em;
+     height: 17em;
+     position: relative;
+     float: left;
 }
 .left-div {
      display: inline-block;
+     height: 100%;
      max-width: 20%;
      vertical-align: top;
      margin-right: 1.5em;
@@ -27,6 +25,7 @@ lang: fr
 }
 .right-div {
      display: inline-block;
+     height: 100%;
      max-width: 20%;
      padding: 1em;
      background-color: WhiteSmoke;
@@ -35,37 +34,42 @@ img.icon4assets {
 	width: 50%;
 }
 @media screen and (max-width: 600px) {
-     .left-div, .right-div {
+.left-div, .right-div {
           max-width: 100%;
           margin-bottom: 1em;
-     }
+}
+
+.container {
+position: relative;
+}
 img.icon4assets {
 	width: 30%;
 }
-	
+
 }
 </style>
-</head>
+
+<div class="home">
 <div class="container">
-	
+
 	<div class="left-div"><img class="icon4assets" src="../img/4-assets/Budget_jaune-trdk.svg"></img><br>
-		
+
 		<b>Budget</b><br>Une organisation centrée sur l'optimisation de vos budgets et délais&hellip;
 </div>
-	
+
 	<div class="left-div"><img class="icon4assets" src="../img/4-assets/Sélection_orange-trdk.svg"></img><br>
-		
+
 		<b>Sélection</b><br>Les meilleurs profils pour vos travaux tout au long de la chaîne de qualité&hellip;
 </div>
 
 	<div class="left-div"><img class="icon4assets" src="../img/4-assets/Réactivité_jaune-trdk-rouge.svg"></img><br>
-		
+
 		<b>Réactivité</b><br>Toujours prêts pour démarrer vos projets et les réaliser au plus vite&nbsp;!
 
 </div>
 
 <div class="right-div"><img class="icon4assets" src="../img/4-assets/Excellence_vert-trdk.svg"></img><br>
-	
+
 		<b>Excellence</b><br>25 ans d’expérience, rigueur et procédures éprouvées à votre service&nbsp;!
 
 </div>
@@ -73,6 +77,5 @@ img.icon4assets {
 </div>
 
 
-  <p class="rss-subscribe">suivre le <a href="{{ "/fr_feed.xml" | prepend: site.baseurl }}">flux RSS</a></p>
-
+  <div class="rss-subscribe">suivre le <a href="{{ "/fr_feed.xml" | prepend: site.baseurl }}">flux RSS</a></div>
 </div>

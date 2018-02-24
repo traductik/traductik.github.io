@@ -1,11 +1,11 @@
 /**
  * Site header
  */
-#site-header {    
+#site-header {
     border-bottom: 1px solid $grey-color-light;
     margin-bottom: 3em;
     min-height: 6em;
-	
+
     // Positioning context for the mobile navigation icon
     position: relative;
 }
@@ -60,7 +60,6 @@
 	float: left;
 	padding:0 0 0 0.5em;
 	top: 0px;
-	
 }
 
 
@@ -81,7 +80,7 @@ p.autotext {
 img.logo {
     position: relative;
     width: 85%;
-    z-index:-50;    
+    z-index:-50;
 }
 
 
@@ -148,7 +147,7 @@ img.animated-logo {
 	margin-top:1.5em;
 	max-width: 18em;
 	margin-bottom:0.25em;
-	& a:hover > img.logo {	
+	& a:hover > img.logo {
 	width: 87%;
     position: relative;
     background-color: white;
@@ -167,8 +166,6 @@ img.animated-logo {
     letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
- 
-
     &,
     &:visited {
         color: $grey-color-dark;
@@ -205,7 +202,7 @@ img.animated-logo {
 	&:before {
 	content: '▽';
 	}
-}      
+}
     .details-link {
         line-height: $base-line-height;
         outline: none;
@@ -221,7 +218,7 @@ img.animated-logo {
         background: none;
         padding: 0.35em;
 }
-     
+
 #clock:hover, #phone:hover, #search:hover {
         color: $orange-traductik;
         transform: scale(1.25, 1.75);
@@ -270,7 +267,7 @@ img.animated-logo {
 .dropdown a:hover {
     padding: 4px;
     box-shadow:  3px 3px 4px 5px Gainsboro;
-    text-decoration: none;  
+    text-decoration: none;
     color: $green-traductik;
      z-index: 80;
 }
@@ -288,7 +285,7 @@ li.dropdown {
 	&:after {
 	content: ' ▽';
 	}
-	
+
 }
 
 .dropdown-content {
@@ -310,7 +307,7 @@ li.dropdown {
 }
 
 
-.dropdown-content a:hover { 
+.dropdown-content a:hover {
     color: $orange-traductik;
 }
 
@@ -334,7 +331,7 @@ li.dropdown {
         border: 1px solid $grey-color-light;
         border-radius: 5px;
         text-align: right;
-           
+
 
 
         .menu-icon {
@@ -367,7 +364,7 @@ li.dropdown {
         }
 
 
-	
+
 
         .page-link {
             display: block;
@@ -542,7 +539,7 @@ li.dropdown {
     position: relative;
     display: inline-block;
     line-height: 0.9em;
-    
+
 }
 
 .tooltip-border {

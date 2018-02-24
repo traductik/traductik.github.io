@@ -1,18 +1,14 @@
-
-
 <!-- Styles dans base.scss -->
-
-
 <div class="wrapper">
 <ul class="bandeau">
-	
+
 	{% assign serv_pages=site.services %}
         {% assign frontpages=serv_pages | where:"lang", page.lang %}
         {% for my_frontpage in frontpages %}
-          {% if my_frontpage.title %}	
-	
+          {% if my_frontpage.title %}
+
 	<li class="bandeauli"><a href="{{ my_frontpage.url | prepend: site.baseurl }}"><span style="font-size:1.3em;width: 0.95em;color: #dd840d;">&#x2713;</span>{{ my_frontpage.title }}</a></li>
-	
+
    {% endif %}
    {% endfor %}
 </ul>
@@ -22,7 +18,3 @@
       <div style="color:#f8cd2a;margin-top:1%;"><i class="fa fa-spinner fa-spin fa-3x fa-fw"></i><br><br><strong>{{ site.data.traductions[page.lang]welcome-header1 }}</strong></div>
       <div style="color: white;margin-top:3em;font-size: 3em;"><em>{{ site.data.traductions[page.lang]welcome-header2 }}</em></div>
       </div>
-	
-	
-
-
