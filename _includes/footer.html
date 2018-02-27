@@ -3,7 +3,9 @@
   <div class="wrapper">
 
     <h2 class="footer-heading">{{ site.title[page.lang] }}</h2>
-
+<div class="rss-subscribe">
+Suivre le <a href="{{ '/feeds/fr_feed.xml' | prepend: site.baseurl }}">flux RSS</a>
+</div>
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
@@ -34,5 +36,13 @@
     </div>
 
   </div>
+ <!--------------Script pour les tags------------->
+ <script src="/js/tags.js"></script>
+
+  <!--------------Script pour les catégories de blog------------->
+ <script src="/js/blog-toc.js"></script>
+
+ <!--------------Script pour les animation de texte------------->
+<script src="/js/textition.js"></script>
 
 </footer>

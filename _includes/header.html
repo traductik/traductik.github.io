@@ -1,41 +1,21 @@
 
 
-<style>
-
-.tooltiptext2 {
-    visibility: hidden;
-    width: 8em;
-    font-size: 0.85em;
-    background-color: rgba(0,0,0,0.5);
-    color: white;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 1;
-}
-
-
-</style>
-
 
 
 
 <!-- Styles dans layout.scss -->
 
 <div class="cartouche">
-<div  id="autoplay">
-	<p class="autotext">{{ site.data.traductions[page.lang]bandeau-top }}</p>
-	<p class="autotext">{{ site.data.traductions[page.lang]bandeau-top2 }}</p>
-	<p class="autotext" style="color:$green-traductik;text-transform: capitalize;font-weight: 600;">Paris &mdash; Nice &mdash; International</p>
-</div>
-<div class="multimodal">
-<span class="clock-text">{{ site.data.traductions[page.lang]clock-text }}</span>
-<span class="phone-text">{{ site.data.traductions[page.lang]phone-text }}</span>
-<span class="search-text">{{ site.data.traductions[page.lang]search-text }}</span>
-</div>
+	<div  id="autoplay">
+		<p class="autotext">{{ site.data.traductions[page.lang]bandeau-top }}</p>
+		<p class="autotext">{{ site.data.traductions[page.lang]bandeau-top2 }}</p>
+		<p class="autotext" style="color:$green-traductik;text-transform: capitalize;font-weight: 600;">Paris &mdash; Nice &mdash; International</p>
+	</div>
+	<div class="multimodal">
+		<span class="clock-text">{{ site.data.traductions[page.lang]clock-text }}</span>
+		<span class="phone-text">{{ site.data.traductions[page.lang]phone-text }}</span>
+		<span class="search-text">{{ site.data.traductions[page.lang]search-text }}</span>
+	</div>
 </div>
 
 <!-- Styles dans layout.scss -->
@@ -46,18 +26,18 @@
 <header id="site-header"> <!----------------- Site header MAIN ------------------->
 
 
-		
+
 		<div id="site-nav-wrapper"> <!----------------- Site nav div#1 à droite ------------------->
-			
+
 			{% include site-nav.html %}
-			
-			
+
+
 		</div> <!----------------- Fin de site nav div#1 à droite ------------------->
-  
-	
-	
-	
-	
+
+
+
+
+
 		<div id="logo-header"><!----------------- Logo header div#2 à gauche ------------------->
 			<span class="tooltiptext2">{{ site.data.traductions[page.lang]tooltip-0 }}</span>
 {% assign logo_id = site.data.logos[page.lang] %}
@@ -161,5 +141,3 @@
 
 
 </div>  <!----------------- Fin du wrapper de l'en-tête ------------------->
-
-

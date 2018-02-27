@@ -8,8 +8,8 @@
   @extend .flag-icon-background;
   position: relative;
   display: inline-block;
-  width: (16 / 9) * 0.65em;
-  line-height: 1em;
+  width: (4 / 3) * 0.75em;
+  line-height: 0.75em;
   &:before {
     content: '\00a0';
   }

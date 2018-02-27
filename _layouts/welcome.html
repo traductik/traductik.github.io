@@ -11,6 +11,10 @@
     </div>
 
 
+    <div class="wrapper">
+
+
+</div>
 
     {% unless page.nav == "nosideblog" %}
 
@@ -18,23 +22,22 @@
 
     {% endunless %}
 
+<div class="welcome">
+
     {% if page.ref == "index" %}
-<div  class="welcome">
-
-
 
 {% include welcome-header.html %}
-</div>
+
 {% endif %}
+</div>
 
-
-<div class="wrapper">
     <div class="page-content">
+
 
         {{ content }}
 
     </div>
-</div>
+
 
     {% include footer.html %}
 

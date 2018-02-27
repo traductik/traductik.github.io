@@ -1,4 +1,9 @@
 <!-- Styles dans base.scss -->
+
+
+
+<!-- Liste horizontale des prestations de service -->
+
 <div class="wrapper">
 <ul class="bandeau">
 
@@ -7,14 +12,16 @@
         {% for my_frontpage in frontpages %}
           {% if my_frontpage.title %}
 
-	<li class="bandeauli"><a href="{{ my_frontpage.url | prepend: site.baseurl }}"><span style="font-size:1.3em;width: 0.95em;color: #dd840d;">&#x2713;</span>{{ my_frontpage.title }}</a></li>
+	<li class="bandeauli"><a href="{{ my_frontpage.url | prepend: site.baseurl }}"><span class="tique-orange"></span>{{ my_frontpage.title }}</a></li>
 
    {% endif %}
    {% endfor %}
 </ul>
 </div>
-	 <div id="bandeau-accueil" style="text-align:center;margin-top:5px">
-		 <div style="position:relative;margin-left: 43%;margin-right:43%;margin-top:0%;margin-bottom:1%;padding:0%;"><img src="../img/overlay-bandeau.svg"></img></div>
-      <div style="color:#f8cd2a;margin-top:1%;"><i class="fa fa-spinner fa-spin fa-3x fa-fw"></i><br><br><strong>{{ site.data.traductions[page.lang]welcome-header1 }}</strong></div>
-      <div style="color: white;margin-top:3em;font-size: 3em;"><em>{{ site.data.traductions[page.lang]welcome-header2 }}</em></div>
+
+<!-- Photo centrale avec accroche et bouton de devis -->
+	 <div id="bandeau-accueil">
+		 <div class="white-corner"><img src="../img/overlay-bandeau.svg"></img></div>
+      <div style="color:#f8cd2a;margin-top:1%; font-size: 1.5em;text-shadow: 1px 1px #dd840d;"><i class="fa fa-spinner fa-spin fa-2x fa-fw"></i><br><br><strong>{{ site.data.traductions[page.lang]welcome-header1 }}</strong></div>
+      <div style="color: white;margin-top:1em; margin-bottom: 2em;font-size: 3em;text-shadow: 1px 1px #f8cd2a;"><em>{{ site.data.traductions[page.lang]welcome-header2 }}</em></div>
       </div>
