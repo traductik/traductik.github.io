@@ -20,20 +20,24 @@
 
     {% if page.ref == "index" %}
 <div  class="welcome">
-
-
-
 {% include welcome-header.html %}
 </div>
+
+
 {% endif %}
 
 
 <div class="wrapper">
-    <div class="page-content">
 
-        {{ content }}
+	<div class="page-content">
 
-    </div>
+{% if page.ref == "index" %}
+{% include 4-assets.html %}
+{% endif %}
+
+{{ content }}
+
+	</div>
 </div>
 
     {% include footer.html %}
