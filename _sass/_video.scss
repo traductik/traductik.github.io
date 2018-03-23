@@ -1,0 +1,71 @@
+
+#bandeau-accueil2 {
+	position:relative;
+	min-height: 30em;
+    padding: 0px;
+    text-align:center;
+    margin-top:5px;
+ }
+
+#headerContent {
+    width: 100%;
+    height: 40%;
+    overflow: hidden;
+    position: relative;
+}
+
+video {
+    position: inherit;
+    min-width: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+p1 {
+    position: absolute;
+    text-align: center;
+    font-size: 2em;
+    z-index: 9999;
+    color: white;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+p2 {
+    position: absolute;
+    text-align: center;
+    font-size: 3.5em;
+    line-height: 1.25em;
+    z-index: 9999;
+    color: red;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+ #overlay {
+  position: absolute;
+  top: 0px;
+  color: #FFF;
+  text-align: center;
+  font-size: 20px;
+  background: url(../img/fond-traductik-stylo2.jpg) no-repeat center center;
+  background-size: cover;
+  opacity: 0.7;
+  filter: alpha(opacity=70); /* For IE8 and earlier */
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  z-index: 50;
+}
+
+#overlay:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+
+#v {
+  z-index: 1;
+}

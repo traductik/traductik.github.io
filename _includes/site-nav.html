@@ -1,4 +1,4 @@
-<html>
+
 
 <!-- Styles dans layout.scss -->
 
@@ -12,8 +12,8 @@
       </a>
 
       <div class="trigger"><!----------------- Trigger dans nav ------------------->
-		
-		
+
+
 		<ul style="font-size:0.92em">  <!----------------- Niveau 1 ------------------->
 		  <!----------------- Entrées de menu ------------------->
        {% assign navpages=site.pages | where:"nav", "navbar"  %}
@@ -23,37 +23,37 @@
          <li class="dropdown">
 	  <a href="javascript:void(0)" class="dropbtn"><!----------------- Drop button ------------------->
 			 <a  {% if  page.title == my_page.title %}class="active-link"{% elsif page.categories contains my_page.ref %}class="active-link" {% else %}class="page-link" {% endif %} href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}
-			
-			
+
+
 			{% if site.[my_page.ref] %}
-			
+
    <span {% if page.categories contains my_page.ref %} class="active-link triangle" {% else %} class="page-link triangle" {% endif %}>
-	<!----------------- Petit triangle pointe en bas pour le sous-menu (layout.scss) ------------------->   
+	<!----------------- Petit triangle pointe en bas pour le sous-menu (layout.scss) ------------------->
 	   </span>
    {% endif %}
-  
+
 </a>
-       
+
        <!----------------- End of drop button ------------------->
-        
+
           <div class="dropdown-content">
          <!----------------- Niveau 2 (nested) ------------------->
          <!----------------- Entrées de sous-menu ------------------->
-          
-       {% assign subpages=site.[my_page.ref] | where:"lang", page.lang %}   
+
+       {% assign subpages=site.[my_page.ref] | where:"lang", page.lang %}
         {% for my_subpage in subpages %}
-      
+
 		<a {% if  my_subpage.ref == page.ref %}class="active-link" {% else %}class="page-link" {% endif %} href="{{ my_subpage.url | prepend: site.baseurl }}">{{ my_subpage.title }}</a>
-        
+
         {% endfor %}
-             <!----------------- Fin des entrées de sous-menu -------------------> 
-          
+             <!----------------- Fin des entrées de sous-menu ------------------->
+
       </div> <!----------------- Fin du niveau 2 (nested) ------------------->
-          
+
           {% endif %}
         {% endfor %}
        <!----------------- Fin des entrées de menu ------------------->
-       
+
        </li>
 
 	<button id="clock" onclick="Horaire();Horaire1();Horaire2()"><i class="far fa-clock details-link"></i></button>
@@ -61,27 +61,24 @@
 	<button id="phone" onclick="Phone();Phone1();Phone2()"><i class="fas fa-phone details-link"></i></button>
 
 	<button id="search" onclick="Search();Search1();Search2()"><i class="fas fa-search details-link"></i></button>
-	
+
 
    <span> <!----------------- Insertion du sélecteur de langue ------------------->
     {% if page.layout!="post" and page.categories %}
- 
+
  {% include selectors/language-selector-{{ page.categories }}.html %}
-  
+
  {% else %}
-   
+
     {% include selectors/language-selector-{{ page.layout }}.html %}
 
 {% endif %}
 
     </span>  <!----------------- Fin de insertion du sélecteur de langue ------------------->
-    
-    
-    
+
+
+
     </ul><!----------------- Fin du niveau 1 ------------------->
     </div><!----------------- Fin de trigger dans nav ------------------->
-  
+
     </nav>
-        
-    
- </html>

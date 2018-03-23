@@ -1,0 +1,46 @@
+<!-- Styles dans base.scss -->
+
+
+
+<!-- Liste horizontale des prestations de service -->
+
+<div class="wrapper">
+<ul class="bandeau">
+
+	{% assign serv_pages=site.services %}
+        {% assign frontpages=serv_pages | where:"lang", page.lang %}
+        {% for my_frontpage in frontpages %}
+          {% if my_frontpage.title %}
+
+	<li class="bandeauli"><a href="{{ my_frontpage.url | prepend: site.baseurl }}"><span class="tique-orange"></span>{{ my_frontpage.title }}</a></li>
+
+   {% endif %}
+   {% endfor %}
+</ul>
+</div>
+
+
+<!-- Photo centrale avec fond vidéo & accroche et bouton de devis à faire -->
+<div id="bandeau-accueil2 ">
+	<!-- Coin blanc en haut au centre de l'image -->
+
+<div id="headerContent">
+
+	 <div id="overlay">
+<div class="white-corner" style="margin-bottom:0%;z-index: 1000"><img src="{{ '/img/overlay-bandeau2.svg' | prepend: site.baseurl }}"></img></div>
+	<p1>
+			<!-- Roue circulaire -->
+<i class="fa fa-spinner fa-spin fa-2x fa-fw"></i><br>
+		{{ site.data.traductions[page.lang]welcome-header1 }}</p1>
+
+
+    <p2>{{ site.data.traductions[page.lang]welcome-header2 }}</p2>
+
+   	</div>
+
+    <video id="v"  autoplay="true" loop>
+        <source id="mp4" src="http://www.coverr.co/s3/mp4/Winter-Grass.mp4" type="video/mp4">
+    </video>
+
+    </div>
+</div>
